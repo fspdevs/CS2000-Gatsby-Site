@@ -20,7 +20,7 @@ const SEO = ({ title, description, banner, pathname, article }) => (
           pathPrefix,
           defaultDescription,
           defaultBanner,
-          twitter,
+          // twitter,
         },
       },
     }) => {
@@ -99,7 +99,7 @@ const SEO = ({ title, description, banner, pathname, article }) => (
 
             {/* Twitter Card */}
             <meta name="twitter:card" content="summary_large_image" />
-            <meta name="twitter:creator" content={twitter} />
+            {/* <meta name="twitter:creator" content={twitter} /> */}
             <meta name="twitter:title" content={seo.title} />
             <meta name="twitter:description" content={seo.description} />
             <meta name="twitter:image" content={seo.image} />
@@ -143,7 +143,7 @@ const query = graphql`
         pathPrefix
         defaultDescription: description
         defaultBanner: banner
-        twitter
+        # twitter
       }
     }
   }
