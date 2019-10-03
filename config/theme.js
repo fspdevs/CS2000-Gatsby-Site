@@ -6,9 +6,9 @@ export const colors = {
     dark: '#a0afd7',
   },
   black: {
-    base: '#333438',
-    light: '#4b4e57',
-    blue: '#2e3246',
+    base: '#0C0C0C',
+    light: '#373838',
+    blue: '#152C3D',
   },
   primary: {
     base: '#3498db',
@@ -16,8 +16,21 @@ export const colors = {
     dark: '#284187',
   },
   background: {
-    light: '#2F648A',
+    light: '#232526',
+    dark: '#232526',
+  },
+  parBlue: {
+    darker: '#152C3D',
     dark: '#224863',
+    light: '#4492C9',
+    mediumDark: '#2A5B7D',
+    mediumLight: '#2F648A',
+  },
+  parGrey: {
+    dark: '#757778',
+    mediumDark: '#9B9D9E',
+    mediumLight: '#B4B6B8',
+    light: '#C0C2C4',
   },
 };
 
@@ -47,6 +60,7 @@ export const gradient = {
   leftToRight: `linear-gradient(-45deg, ${colors.background.light} 0%, ${colors.background.dark} 100%)`,
   // eslint-disable-next-line
   rightToLeft: `linear-gradient(45deg, ${colors.background.dark} 100%,${colors.background.light} 100%, ${colors.background.dark} 100%)`,
+  lawrencium: `linear-gradient(to right, #24243e, #302b63, #0f0c29)`,
 };
 
 export const transition = {
@@ -96,5 +110,7 @@ export const theme = {
     },
   },
 };
+
+
 
 export default theme;
