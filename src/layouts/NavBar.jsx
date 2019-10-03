@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import styled from '@emotion/styled';
 import Headroom from 'react-headroom';
-import logo from '../../static/logo/header-logo.png';
+import logo from '../../static/logo/cs200Logo.png';
 
 const StyledLink = styled(Link)`
   display: flex;
@@ -22,7 +22,7 @@ const Nav = styled.nav`
     margin-left: 2rem;
     transition: all ${props => props.theme.transitions.default.duration};
     &:hover {
-      color: ${props => props.theme.colors.white.grey};
+      color: ${props => props.theme.colors.parBlue.light};
     }
   }
 `;

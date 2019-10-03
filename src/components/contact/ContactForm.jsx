@@ -1,4 +1,4 @@
-import React, { useReducer } from 'react';
+import React, { useState, useEffect, useReducer } from 'react';
 import styled from '@emotion/styled';
 
 const H2 = styled.h2`
@@ -62,7 +62,7 @@ const StyledButton = styled.button`
   :hover {
     border: 1px ${props => props.theme.colors.parBlue.light} solid;
     padding: 5px;
-    background-color: #BCFFA7;
+    background-color: #bcffa7;
   }
   :focus {
     outline: aliceblue;
@@ -74,36 +74,58 @@ const StyledButton = styled.button`
 `;
 
 export const ContactForm = () => {
-  
+  // const [name, setName] = useState('')
+  // const [email, setEmail] = useState('')
+  // const [subject, setSubject] = useState('')
+  // const [message, setMessage] = useState('')
+
+  const [state, updateState] = useReducer(
+    (state, newstate) => ({ ...state, ...newstate }),
+    { name: '', email: '', subject: '', message: '' }
+  );
+
+  const { name, email, subject, message } = state;
+  function submission(e) {
+    e.preventDefault();
+    console.log(name, email, subject, message);
+    if (state) {
+      console.log(state, 'this is state');
+    }
+  }
+
   return (
     <>
       <FormWrap>
-        <StyledForm>
+        <StyledForm onSubmit={submission}>
           <H2>Keep In Touch</H2>
           <StyledInput
             name="name"
-            value=""
+            value={name}
             placeholder="Your Name"
             label="Name"
+            onChange={e => updateState({ name: e.target.value })}
           />
           <StyledInput
             name="email"
-            value=""
+            value={email}
             placeholder="Your Email"
             label="Email"
+            onChange={e => updateState({ email: e.target.value })}
           />
           <StyledInput
             name="subject"
-            value=""
+            value={subject}
             placeholder="Subject"
             label="Subject"
+            onChange={e => updateState({ subject: e.target.value })}
           />
           <StyledArea
             type="textarea"
             name="message"
-            value=""
+            value={message}
             placeholder="Your Message"
             label="Message"
+            onChange={e => updateState({ message: e.target.value })}
           />
           <StyledButton type="submit">Submit</StyledButton>
         </StyledForm>
