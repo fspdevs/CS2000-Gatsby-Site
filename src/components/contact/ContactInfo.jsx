@@ -2,9 +2,9 @@ import React from 'react';
 import styled from '@emotion/styled';
 
 const H2 = styled.h2`
-border-bottom: 1px black solid;
-padding-bottom: 10px;
-`
+  border-bottom: 1px ${props => props.theme.colors.parBlue.light} solid;
+  padding-bottom: 10px;
+`;
 const InfoWrap = styled.div`
   padding: 20px;
   width: 100%;

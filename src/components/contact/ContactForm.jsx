@@ -2,7 +2,7 @@ import React, { useState, useEffect, useReducer } from 'react';
 import styled from '@emotion/styled';
 
 const H2 = styled.h2`
-  border-bottom: 1px black solid;
+  border-bottom: 1px ${props => props.theme.colors.parBlue.light} solid;
   padding-bottom: 10px;
 `;
 const FormWrap = styled.div`
@@ -20,7 +20,7 @@ const StyledForm = styled.form`
 
 const StyledArea = styled.textarea`
   margin: 10px;
-  border: 2px ${props => props.theme.colors.parGrey.light} solid;
+  border: 2px ${props => props.theme.colors.parBlue.light} solid;
 
   :hover {
     border: 1px ${props => props.theme.colors.parBlue.light} solid;
@@ -40,7 +40,7 @@ const StyledInput = styled.input`
   border-top: none;
   border-right: none;
   border-left: none;
-  border-bottom: 2px ${props => props.theme.colors.parGrey.light} solid !important;
+  border-bottom: 2px ${props => props.theme.colors.parBlue.light} solid !important;
 
   :hover {
     border: 1px ${props => props.theme.colors.parBlue.light} solid;
@@ -85,6 +85,8 @@ export const ContactForm = () => {
   );
 
   const { name, email, subject, message } = state;
+
+// TODO: Add logic to send form data 
   function submission(e) {
     e.preventDefault();
     console.log(name, email, subject, message);
@@ -96,7 +98,8 @@ export const ContactForm = () => {
   return (
     <>
       <FormWrap>
-        <StyledForm onSubmit={submission}>
+        //TODO: Add attributes and hidden elements to point towards Netlify
+        <StyledForm onSubmit={submission} >
           <H2>Keep In Touch</H2>
           <StyledInput
             name="name"
