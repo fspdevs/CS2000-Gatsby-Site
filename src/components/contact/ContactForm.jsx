@@ -8,6 +8,7 @@ const H2 = styled.h2`
 const FormWrap = styled.div`
   padding: 20px;
   width: 100%;
+  min-height: 800px;
 `;
 
 const StyledForm = styled.form`
@@ -98,7 +99,7 @@ export const ContactForm = () => {
   return (
     <>
       <FormWrap>
-        //TODO: Add attributes and hidden elements to point towards Netlify
+        {/* TODO: Add attributes and hidden elements to point towards Netlify */}
         <StyledForm onSubmit={submission} >
           <H2>Keep In Touch</H2>
           <StyledInput

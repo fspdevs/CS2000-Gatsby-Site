@@ -1,4 +1,6 @@
 const config = require('./config/site');
+const path = require(`path`)
+
 
 module.exports = {
   siteMetadata: {
@@ -61,5 +63,14 @@ module.exports = {
       },
     },
     'gatsby-plugin-offline',
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: path.join(__dirname, `src`, `images`),
+      },
+    },
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
   ],
 };
