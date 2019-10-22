@@ -39,6 +39,7 @@ const P = styled.p`
   color: #666;
 `;
 const H3 = styled.h3`
+font-size: 30px;
   margin: 30px;
 `;
 
