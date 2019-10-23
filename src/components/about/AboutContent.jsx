@@ -39,13 +39,10 @@ const AboutContent = () => {
     </AboutRow2Wrap>
     <style jsx>
         {`
-          
-
           #my-overlay-about {
             height: 900px;
             width: 100vw;
           }
- 
         `}
       </style>
     </>

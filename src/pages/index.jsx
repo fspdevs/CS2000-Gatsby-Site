@@ -1,17 +1,21 @@
 import React from 'react';
-// import { graphql } from 'gatsby';
-// import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import styled from '@emotion/styled';
 import LandingBGImage from '../components/home/LandingBGImage'
 import { Header } from 'components';
 import { Layout } from 'layouts';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faBriefcase, faTrophy } from '@fortawesome/free-solid-svg-icons'
+import WhoWeAre from '../components/home/WhoWeAre';
+import Results from '../components/home/Results';
+
+// const element = <FontAwesomeIcon icon={faCoffee} />
 
 const HomeWrapperRow1 = styled.div`
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  height: 600px;
+  height:400px;
+
   justify-content: center;
   margin: 4rem 4rem 1rem 4rem;
   @media (max-width: 1000px) {
@@ -25,13 +29,17 @@ const HomeWrapperRow1 = styled.div`
 const HomeWrapperRow2 = styled.div`
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  height: 600px;
-  justify-content: center;
-  margin: 4rem 4rem 1rem 4rem;
-  @media (max-width: 1000px) {
-    margin: 4rem 2rem 1rem 2rem;
-  }
+  // flex-wrap: wrap;
+  // height: 600px;
+  max-width: 70% !important;
+  // justify-content: center;
+  margin: 0 auto;
+  //margin: 20px;
+  // margin: 4rem 4rem 1rem 4rem;
+  // @media (max-width: 1000px) {
+  //   margin: 4rem 2rem 1rem 2rem;
+ 
+  // }
   @media (max-width: 700px) {
     margin: 4rem 1rem 1rem 1rem;
   }
@@ -40,6 +48,9 @@ const HomeWrapperRow2 = styled.div`
 
 const Index = () => {
   // const { edges } = data.allMarkdownRemark;
+ const hoverWho = () => {
+
+ }
   return (
     <Layout>
 
@@ -56,7 +67,16 @@ const Index = () => {
         </div>
       </HomeWrapperRow1>
       <HomeWrapperRow2>
-        
+      {/* <div className="icon-div briefcase">
+        <FontAwesomeIcon icon={faBriefcase} />
+      </div> */}
+      <WhoWeAre onMouseEnter={hoverWho}
+    onMouseLeave={unHoverWho}/>
+      <Results onMouseEnter={hoverResults}
+    onMouseLeave={unHoverResults}/>
+      {/* <div className="icon-div trophy">
+        <FontAwesomeIcon icon={faTrophy} size="2x"/>
+      </div> */}
       </HomeWrapperRow2>
       <style jsx>
         {`
@@ -72,23 +92,12 @@ const Index = () => {
             height: 400px;
             margin: 0px;
             border-width: 0px;
-            // line-height: 97px;
             white-space: nowrap;
             min-width: 0px;
-            // min-height: 0px;
-            // transform: rotate(0deg);
-            // opacity: 1;
-            // left: 223.906px;
-            // top: 116.78px;
             visibility: visible;
-            
           }
-          // p {
-          //   margin-top:  20px ;
-          // }
-
+        
           .line-1 {
-            // position: absolute;
             font-align: center;
             color: #fff;
             height: 120px;
@@ -97,18 +106,14 @@ const Index = () => {
             font-size: 100px;
             line-height: 100px;
             font-family: 'Open Sans',sans;
-            // margin: 0;
             border-width: 0;
             border-style: none;
             white-space: nowrap;
-            // letter-spacing: 0;
            text-shadow: 3px 3px #040428;
           }
 
           .line-2 {
-            // position: absolute;
             color: #e4ea00;
-            // color: #fff;
             height: 120px;
             text-shadow: none;
             font-weight: 800;
@@ -119,9 +124,25 @@ const Index = () => {
             border-width: 0;
             border-style: none;
             white-space: nowrap;
-            // letter-spacing: 0;
            text-shadow: 3px 3px #040428;
            color: 
+          }
+          .icon {
+            height: 200px;
+          }
+
+          @media (max-width: 1000px) {
+            .headline {
+              font-size: 75px;
+            }
+            .line-2 {
+              height: 80px
+            }
+            .line-1{
+              height: 80px
+            }
+  
+            
           }
 
         `}
