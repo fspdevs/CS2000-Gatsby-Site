@@ -9,14 +9,15 @@ const ModelWrapper = styled.section`
   background: #ecf0f1;
 `;
 const ModelContainer = styled.div`
-  padding: 5px;
+
   display: flex;
   justify-content: center;
+
 `;
 const Box = styled.div`
   display: flex;
   flex-direction: column;
-  width: 293px;
+  width: 20%;
   justify-content: center;
   margin: 20px 15px;
 `;
@@ -29,7 +30,6 @@ const Subtitle = styled.div`
 `;
 
 const P = styled.p`
-  font-size: 14px;
   font-family: lato;
   font-size: 14px;
   line-height: 20px;
@@ -44,12 +44,20 @@ const H3 = styled.h3`
 const H5 = styled.h5`
   font-size: 20px;
 `;
+const LI = styled.li`
+  margin: 0;
+`;
+const UL = styled.ul`
+  font-size: 14px;
+  font-family: lato;
+`;
 
 const Model = () => {
   return (
     <>
       <ModelWrapper>
         <H3>How Our Model Works</H3>
+        <P>It All Starts With Underwriting</P>
         <ModelContainer>
           <Box>
             <ImageOne />
@@ -70,11 +78,11 @@ const Model = () => {
                 We investigate numerous sources in addition to credit scores to
                 screen applicants including:
               </P>
-              <ul>
-                <li>Site Inspections</li>
-                <li>MCA Industry Databases</li>
-                <li>Background Checks</li>
-              </ul>
+              <UL>
+                <LI>Site Inspections</LI>
+                <LI>MCA Industry Databases</LI>
+                <LI>Background Checks</LI>
+              </UL>
             </Subtitle>
           </Box>
           <Box>

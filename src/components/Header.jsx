@@ -46,7 +46,7 @@ const Subtitle = styled.p`
 
 const Header = ({ children, title, date, cover }) => (
   <Wrapper>
-    {/* <Img fluid={cover || {} || [] || ''} /> */}
+    <Img fluid={cover || {} || [] || ''} />
     <Text>
       <h1>{title}</h1>
 
