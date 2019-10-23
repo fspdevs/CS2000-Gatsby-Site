@@ -48,9 +48,9 @@ const HomeWrapperRow2 = styled.div`
 
 const Index = () => {
   // const { edges } = data.allMarkdownRemark;
- const hoverWho = () => {
+//  const hoverWho = () => {
 
- }
+//  }
   return (
     <Layout>
 
@@ -70,10 +70,10 @@ const Index = () => {
       {/* <div className="icon-div briefcase">
         <FontAwesomeIcon icon={faBriefcase} />
       </div> */}
-      <WhoWeAre onMouseEnter={hoverWho}
-    onMouseLeave={unHoverWho}/>
-      <Results onMouseEnter={hoverResults}
-    onMouseLeave={unHoverResults}/>
+      <WhoWeAre 
+    />
+      <Results 
+   />
       {/* <div className="icon-div trophy">
         <FontAwesomeIcon icon={faTrophy} size="2x"/>
       </div> */}
