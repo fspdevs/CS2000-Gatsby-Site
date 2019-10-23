@@ -17,12 +17,15 @@ const Nav = styled.nav`
   font-weight: 500;
   font-size: 1.1rem;
   align-items: center;
+  // color: ${props => props.theme.gradient.leftToRight} !important;
   a {
-    color: ${props => props.theme.colors.white.base};
+    color: #383838 !important;
+    text-decoration: none;
     margin-left: 2rem;
     transition: all ${props => props.theme.transitions.default.duration};
     &:hover {
-      color: ${props => props.theme.colors.parBlue.light};
+      color: ${props => props.theme.colors.parBlue.light} !important;
+      // color: #0C0E2D !important;
     }
   }
 `;
