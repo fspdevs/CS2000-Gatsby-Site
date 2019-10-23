@@ -34,6 +34,7 @@ const LandingBGImage = ({ children, className }) => (
           </BackgroundImage>
         )
       }}
+      
     />
   )
 
