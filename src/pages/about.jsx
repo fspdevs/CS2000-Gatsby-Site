@@ -8,6 +8,7 @@ import AboutMain from '../components/about/AboutMain';
 import AboutBGImage from "../components/about/AboutBGImage";
 import AboutContent from "../components/about/AboutContent";
 
+
 // const AboutRow1Wrap = styled.div`
 //   margin-top: 20px;
 //   display: flex;
