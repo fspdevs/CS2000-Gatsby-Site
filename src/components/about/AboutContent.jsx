@@ -4,6 +4,7 @@ import AboutBGImage from '../about/AboutBGImage'
 import AboutMain from '../about/AboutMain'
 import Portfolio from "../about/Portfolio"
 import Dedication from "../about/Dedication"
+import Fade from "react-reveal/Fade"
 
 const AboutRow1Wrap = styled.div`
   margin-top: 20px;
@@ -31,11 +32,17 @@ const AboutContent = () => {
       <div id="my-overlay-about"></div>
     </AboutBGImage>
      <AboutRow1Wrap>
+       <Fade bottom>
       <AboutMain />
+      </Fade>
     </AboutRow1Wrap>
     <AboutRow2Wrap>
+      <Fade left>
        <Portfolio />
+       </Fade>
+       <Fade right>
        <Dedication />
+       </Fade>
     </AboutRow2Wrap>
     <style jsx>
         {`

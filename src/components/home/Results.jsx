@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState, useEffect } from "react"
 import styled from '@emotion/styled';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {  faTrophy } from '@fortawesome/free-solid-svg-icons'
+import Fade from "react-reveal/Fade"
 
 const ResultsRow1Wrap = styled.div`
   margin-top: 20px;
@@ -26,20 +27,58 @@ const WhoRow2Wrap = styled.div`
 
 
 const Results = () => {
+  const [state, setState] = useState({
+    hoverWho: false,
+    hoverResults: false
+  })
+
+const hoverWho = () => {
+    console.log("in here")
+
+setState({
+    ...state,
+    hoverWho: true,
+  })
+    
+     console.log(state)
+}
+
+const unHoverWho = () => {
+
+  console.log("unhover")
+  setState({
+    ...state,
+    hoverWho: false,
+  })
+}
+
+
+// useEffect(() => {
+//   if (state.hoverWho === true) {
+//     // if true run handle show function to open modal
+  
+//     // set state modal toggle back to false
+ 
+//   }
+// })
+
+
   return (
     <>
     < div className="wrapper">
-    <ResultsRow1Wrap>
+      <Fade right>
+    <ResultsRow1Wrap onMouseEnter={hoverWho}  onMouseLeave={unHoverWho} className="section-who">
    {/* <div className="icon-div briefcase"> */}
-        <FontAwesomeIcon icon={faTrophy} size="2x" className="icon icon-change"/>
+        <FontAwesomeIcon icon={faTrophy} size="2x" className="icon icon-change icon-spin" style={state.hoverWho ? {color: '#e74c3c', border: '2px solid #e74c3c'}:  {color: 'black', border: '2px solid black'}}/>
         {/* <i class="fas fa-trophy"></i> */}
         <div className="who-text">
-            <h2 className="icon-change">Results</h2>
+            <h2 className="icon-change" style={state.hoverWho ? {color: '#e74c3c'}:  {color: 'black'}}>Results</h2>
             <p className="home-p">We are a results oriented company that offers alternative lending to small businesses. Our portfolio of clients speaks for itself.</p>
         </div>
 
     {/* </div> */}
     </ResultsRow1Wrap>
+    </Fade>
     </div>
 {/* 
     <WhoRow2Wrap>
