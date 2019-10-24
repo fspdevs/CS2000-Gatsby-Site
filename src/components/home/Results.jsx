@@ -5,7 +5,7 @@ import {  faTrophy } from '@fortawesome/free-solid-svg-icons'
 import Fade from "react-reveal/Fade"
 
 const ResultsRow1Wrap = styled.div`
-  margin-top: 20px;
+  margin-top: 190px;
   display: flex;
   flex-direction: row;
   align-content: center;
@@ -13,6 +13,10 @@ const ResultsRow1Wrap = styled.div`
 //   justify-content: space-around;
   height: 300px;
 //   width: 150px;
+@media (max-width: 900px) {
+  // width: 100% !important;
+margin-top: 50px;
+}
 `;
 
 const WhoRow2Wrap = styled.div`
@@ -98,9 +102,11 @@ const unHoverWho = () => {
 
           .home-p {
               font-size: 16px;
+             
           }
           .who-text {
               max-width: 550px;
+              min-width: 250px;
           }
 
           .wrapper {
@@ -109,6 +115,8 @@ const unHoverWho = () => {
             flex-direction: column;
             align-content: center;
           }
+
+
 
         //   .svg-inline--fa fa-briefcase fa-w-16 fa-2x icon {
         //    width: 70px;
