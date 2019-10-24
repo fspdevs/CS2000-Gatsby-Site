@@ -1,20 +1,26 @@
 import React from 'react';
 import styled from '@emotion/styled';
+import Chart from 'react-google-charts';
 
 const StatsWrapper = styled.section`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-`;
-
-const StatsCol = styled.div`
+padding-top: 100px;
   display: flex;
   flex-direction: column;
-  width: 40%;
+  align-items: center;
+`;
+const StatsContainer = styled.div`
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+`;
+const StatsCol = styled.div`
+  width: 600px;
 `;
 const StatsTitle = styled.h4`
   font-size: 25px;
+  border-bottom: 1px blue solid;
+  padding-bottom: 10px;
+  margin: 10px 20px;
 `;
 const StatsContent = styled.div`
   flex-direction: column;
@@ -34,45 +40,73 @@ const Stats = () => {
   return (
     <>
       <StatsWrapper>
-        <StatsCol>
-          <StatsTitle>Porfolio Diversification</StatsTitle>
+        <StatsContainer>
           <StatsContent>
+            <StatsTitle>Porfolio Diversification</StatsTitle>
             <h5>Risk Mitigation Through Industry Diversification</h5>
             <ChartBox>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Dictum
-              fusce ut placerat orci nulla. Donec et odio pellentesque diam
-              volutpat commodo sed. Nisl suscipit adipiscing bibendum est
-              ultricies integer quis auctor. Ullamcorper velit sed ullamcorper
-              morbi tincidunt.
+              <Chart
+                width={'600px'}
+                height={'400px'}
+                chartType="PieChart"
+                loader={<div>Loading Chart</div>}
+                data={[
+                  ['Industry', 'Distribution'],
+                  ['Retail', 8.8],
+                  ['Construction', 8.4],
+                  ['Technology', 9.7],
+                  ['Finance', 8.4],
+                  ['Automative', 8.3],
+                  ['Restaurant', 8.3],
+                  ['Energy', 7.8],
+                  ['Medical', 7],
+                  ['Marketing', 7],
+                  ['Manufacturing', 6.9],
+                  ['Food Distribution', 6.5],
+                  ['Gym/Salons', 4.6],
+                  ['Home', 4.4],
+                  ['Travel', 2.5],
+                  ['Other Industries', 1.4],
+                ]}
+                options={{
+                  title: 'Risk Mitigation Through Industry Diversification',
+                }}
+                rootProps={{ 'data-testid': '1' }}
+              />
             </ChartBox>
           </StatsContent>
-        </StatsCol>
-        <StatsCol>
-          <StatsTitle>Capital Source 2000 Advantages</StatsTitle>
-          <h5>
-            Once an MCA is approved and funded it begins to generate cash flow
-            the next day.
-          </h5>
-          <ul>
-            <li>
-              Our MCA’s range in size from $5,000 to $150,000 and average
-              funding size $25,101
-            </li>
-            <li>
-              Funding terms are typically given a for a 66 to 132 business day
-              period or 3 to 6 months based on 22 business days per month.
-            </li>
-            <li>
-              Client payments are collected via ACH debit directly from client
-              bank accounts.
-            </li>
-            <li>
-              MCA payback is generally based on an average factoring rate of
-              1.40
-            </li>
-          </ul>
-        </StatsCol>
+
+          <StatsCol>
+            <StatsTitle>Capital Source 2000 Advantages</StatsTitle>
+            <StatsContent>
+              <h5>
+                Once an MCA is approved and funded it begins to generate cash
+                flow the next day.
+              </h5>
+              <ChartBox>
+                <ul>
+                  <li>
+                    Our MCA’s range in size from $5,000 to $150,000 and average
+                    funding size $25,101
+                  </li>
+                  <li>
+                    Funding terms are typically given a for a 66 to 132 business
+                    day period or 3 to 6 months based on 22 business days per
+                    month.
+                  </li>
+                  <li>
+                    Client payments are collected via ACH debit directly from
+                    client bank accounts.
+                  </li>
+                  <li>
+                    MCA payback is generally based on an average factoring rate
+                    of 1.40
+                  </li>
+                </ul>
+              </ChartBox>
+            </StatsContent>
+          </StatsCol>
+        </StatsContainer>
       </StatsWrapper>
     </>
   );
