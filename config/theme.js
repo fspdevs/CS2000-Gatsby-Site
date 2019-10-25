@@ -11,7 +11,7 @@ export const colors = {
     blue: '#152C3D',
   },
   primary: {
-    base: '#3498db',
+    base: '#4492C9',
     light: '#3e5fbc',
     dark: '#284187',
   },
@@ -30,7 +30,7 @@ export const colors = {
     dark: '#757778',
     mediumDark: '#9B9D9E',
     mediumLight: '#B4B6B8',
-    light: '#C0C2C4',
+    light: '#ecf0f1',
   },
 };
 
@@ -110,7 +110,5 @@ export const theme = {
     },
   },
 };
-
-
 
 export default theme;
