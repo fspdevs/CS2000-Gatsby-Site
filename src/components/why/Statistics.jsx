@@ -2,6 +2,7 @@ import React from 'react';
 import styled from '@emotion/styled';
 import Chart from 'react-google-charts';
 import { colors } from '../../../config/theme';
+import Slide from 'react-reveal/Slide';
 
 const StatsWrapper = styled.section`
   padding-top: 100px;
@@ -32,7 +33,6 @@ const StatsContent = styled.div`
 `;
 
 const ChartBox = styled.div`
-  width: 100%;
   margin: 5px 10px;
 `;
 
@@ -54,36 +54,35 @@ const Stats = () => {
           <StatsContent>
             <StatsTitle>Porfolio Diversification</StatsTitle>
             <h5>Risk Mitigation Through Industry Diversification</h5>
-           
-              <Chart
-                width={'700px'}
-                height={'500px'}
-                chartType="PieChart"
-                loader={<div>Loading Chart</div>}
-                data={[
-                  ['Industry', 'Distribution'],
-                  ['Retail', 8.8],
-                  ['Construction', 8.4],
-                  ['Technology', 9.7],
-                  ['Finance', 8.4],
-                  ['Automative', 8.3],
-                  ['Restaurant', 8.3],
-                  ['Energy', 7.8],
-                  ['Medical', 7],
-                  ['Marketing', 7],
-                  ['Manufacturing', 6.9],
-                  ['Food Distribution', 6.5],
-                  ['Gym/Salons', 4.6],
-                  ['Home', 4.4],
-                  ['Travel', 2.5],
-                  ['Other Industries', 1.4],
-                ]}
-                options={{
-                  title: '',
-                }}
-                rootProps={{ 'data-testid': '1' }}
-              />
-        
+
+            <Chart
+              width={'700px'}
+              height={'500px'}
+              chartType="PieChart"
+              loader={<div>Loading Chart</div>}
+              data={[
+                ['Industry', 'Distribution'],
+                ['Retail', 8.8],
+                ['Construction', 8.4],
+                ['Technology', 9.7],
+                ['Finance', 8.4],
+                ['Automative', 8.3],
+                ['Restaurant', 8.3],
+                ['Energy', 7.8],
+                ['Medical', 7],
+                ['Marketing', 7],
+                ['Manufacturing', 6.9],
+                ['Food Distribution', 6.5],
+                ['Gym/Salons', 4.6],
+                ['Home', 4.4],
+                ['Travel', 2.5],
+                ['Other Industries', 1.4],
+              ]}
+              options={{
+                title: '',
+              }}
+              rootProps={{ 'data-testid': '1' }}
+            />
           </StatsContent>
 
           <StatsCol>
@@ -95,23 +94,27 @@ const Stats = () => {
               </h5>
               <ChartBox>
                 <UL>
-                  <LI>
-                    Our MCA’s range in size from $5,000 to $150,000 and average
-                    funding size $25,101
-                  </LI>
-                  <LI>
-                    Funding terms are typically given a for a 66 to 132 business
-                    day period or 3 to 6 months based on 22 business days per
-                    month.
-                  </LI>
-                  <LI>
-                    CLIent payments are collected via ACH debit directly from
-                    cLIent bank accounts.
-                  </LI>
-                  <LI>
-                    MCA payback is generally based on an average factoring rate
-                    of 1.40
-                  </LI>
+                  <Slide right cascade>
+                    <div>
+                      <LI>
+                        Our MCA’s range in size from $5,000 to $150,000 and
+                        average funding size $25,101
+                      </LI>
+                      <LI>
+                        Funding terms are typically given a for a 66 to 132
+                        business day period or 3 to 6 months based on 22
+                        business days per month.
+                      </LI>
+                      <LI>
+                        Client payments are collected via ACH debit directly
+                        from client bank accounts.
+                      </LI>
+                      <LI>
+                        MCA payback is generally based on an average factoring
+                        rate of 1.40
+                      </LI>
+                    </div>
+                  </Slide>
                 </UL>
               </ChartBox>
             </StatsContent>

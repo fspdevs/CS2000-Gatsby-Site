@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import { ImageOne, ImageTwo, ImageThree } from './images';
+import Fade from 'react-reveal/Fade';
+import Pulse from 'react-reveal/Pulse';
 
 const ModelWrapper = styled.section`
   display: flex;
@@ -9,10 +11,8 @@ const ModelWrapper = styled.section`
   background: #ecf0f1;
 `;
 const ModelContainer = styled.div`
-
   display: flex;
   justify-content: center;
-
 `;
 const Box = styled.div`
   display: flex;
@@ -37,8 +37,10 @@ const P = styled.p`
   color: #666;
 `;
 const H3 = styled.h3`
+font-weight: 600;
   font-size: 30px;
   margin: 30px;
+  font-family: 'Open Sans',-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif;
 `;
 
 const H5 = styled.h5`
@@ -46,55 +48,65 @@ const H5 = styled.h5`
 `;
 const LI = styled.li`
   margin: 0;
+  list-style-type: none;
 `;
 const UL = styled.ul`
   font-size: 14px;
   font-family: lato;
+  margin: 0;
 `;
 
 const Model = () => {
   return (
     <>
       <ModelWrapper>
-        <H3>How Our Model Works</H3>
-        <P>It All Starts With Underwriting</P>
+        <Pulse>
+          <div style={{ textAlign: 'center' }}>
+            <H3>How Our Model Works</H3>
+            <P>It All Starts With Underwriting</P>
+          </div>
+        </Pulse>
         <ModelContainer>
-          <Box>
-            <ImageOne />
-            <Subtitle>
-              <H5>Underwriting</H5>
-              <P>
-                Capital Source 2000 uses a financial matrix for our underwriting
-                which evaluates clients with an emphasis based on cash flow
-                rather than traditional credit metrics.
-              </P>
-            </Subtitle>
-          </Box>
-          <Box>
-            <ImageTwo />
-            <Subtitle>
-              <H5>Analysis</H5>
-              <P>
-                We investigate numerous sources in addition to credit scores to
-                screen applicants including:
-              </P>
-              <UL>
-                <LI>Site Inspections</LI>
-                <LI>MCA Industry Databases</LI>
-                <LI>Background Checks</LI>
-              </UL>
-            </Subtitle>
-          </Box>
-          <Box>
-            <ImageThree />
-            <Subtitle>
-              <H5>Funded</H5>
-              <P>
-                We complete the underwriting process to reach a decision in 48
-                hours.
-              </P>
-            </Subtitle>
-          </Box>
+          <Fade bottom cascade>
+            <div style={{ display: 'flex', justifyContent: 'center' }}>
+              <Box>
+                <ImageOne />
+                <Subtitle>
+                  <H5>Underwriting</H5>
+                  <P>
+                    Capital Source 2000 uses a financial matrix for our
+                    underwriting which evaluates clients with an emphasis based
+                    on cash flow rather than traditional credit metrics.
+                  </P>
+                </Subtitle>
+              </Box>
+              <Box>
+                <ImageTwo />
+                <Subtitle>
+                  <H5>Analysis</H5>
+                  <P>
+                    We investigate numerous sources in addition to credit scores
+                    to screen applicants including:
+                  </P>
+                  <UL>
+                    <LI>Site Inspections</LI>
+                    <LI>MCA Industry Databases</LI>
+                    <LI>Background Checks</LI>
+                  </UL>
+                </Subtitle>
+              </Box>
+              <Box>
+                <ImageThree />
+                <Subtitle>
+                  <H5>Funded</H5>
+                  <P>
+                    We complete the underwriting process to reach a decision in
+                    48 hours.
+                  </P>
+                </Subtitle>
+              </Box>
+            </div>
+          </Fade>
         </ModelContainer>
       </ModelWrapper>
     </>

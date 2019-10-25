@@ -14,11 +14,15 @@ export const ImageThree = () => {
   const image = Data();
   return <Img fluid={image.imageThree.childImageSharp.fluid} />;
 };
+export const PortalImage = () => {
+  const image = Data();
+  return <Img fluid={image.portalImage.childImageSharp.fluid} />;
+};
 
 export const fluidImage = graphql`
   fragment fluidImage on File {
     childImageSharp {
-      fluid(maxWidth: 600) {
+      fluid(maxWidth: 900) {
         ...GatsbyImageSharpFluid
       }
     }
@@ -36,6 +40,9 @@ export const Data = () => {
           ...fluidImage
         }
         imageThree: file(relativePath: { eq: "3.png" }) {
+          ...fluidImage
+        }
+        portalImage: file(relativePath: { eq: "smart.jpg" }) {
           ...fluidImage
         }
       }
