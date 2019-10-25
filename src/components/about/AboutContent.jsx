@@ -11,7 +11,7 @@ const AboutRow1Wrap = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  height: 450px;
+  min-height: 450px;
 `;
 
 const AboutRow2Wrap = styled.div`
@@ -20,8 +20,17 @@ const AboutRow2Wrap = styled.div`
   flex-direction: row;
   justify-content: space-around;
   margin: 0 auto;
-  height: 450px;
+  min-height: 450px;
+  // background: #f0f0f0;
   max-width: 1366px;
+  @media (max-width: 760px) {
+    flex-wrap: wrap;
+    font-size: 16px;
+  }
+  @media (max-width: 433px) {
+    font-size: 14px;
+  }
+  
 `;
 
 
