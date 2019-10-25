@@ -40,13 +40,13 @@ const AboutBGImage = ({ children, className }) => (
   const StyledBackgroundSection = styled(AboutBGImage)`
   width: 100vw;
   background-position: bottom center;
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
   // background-size: cover;
   filter: brightness(93%);
   position: absolute !important;
-  height: 1020px;
+  min-height: 1020px;
   z-index: -100;
-  margin-top: -100px;
+  margin-top: 0px;
      
 `
 

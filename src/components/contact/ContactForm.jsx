@@ -18,10 +18,8 @@ const StyledForm = styled.form`
   align-content: center;
   width: 75%;
   @media (max-width: 515px) {
- 
     font-size: 14px;
     margin-left: 15px;
-
      }
  
 
@@ -51,10 +49,10 @@ const StyledInput = styled.input`
   border-right: none;
   border-left: none;
   border-bottom: 2px ${props => props.theme.colors.parBlue.light} solid !important;
-
   :hover {
     border: 1px ${props => props.theme.colors.parBlue.light} solid;
   }
+
   :focus {
     outline: aliceblue;
     outline-offset: 5px;
@@ -74,6 +72,7 @@ const StyledButton = styled.button`
     padding: 5px;
     background-color: #4492c9;
   }
+
   :focus {
     outline: aliceblue;
     outline-offset: 5px;
@@ -81,16 +80,19 @@ const StyledButton = styled.button`
     outline-color: chartreuse;
     outline-width: thin;
   }
-  @media (max-width: 515px) {
- 
-    font-size: 14px;
 
- 
-  
+  @media (max-width: 515px) {
+    font-size: 14px;
      }
 `;
 
 export const ContactForm = () => {
+  // function that maps through the data that will be sent through netlify
+function encode(data) {
+  return Object.keys(data)
+    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&")
+}
   // const [name, setName] = useState('')
   // const [email, setEmail] = useState('')
   // const [subject, setSubject] = useState('')
@@ -123,6 +125,7 @@ export const ContactForm = () => {
             value={name}
             placeholder="Your Name"
             label="Name"
+            type="text"
             onChange={e => updateState({ name: e.target.value })}
           />
           <StyledInput
@@ -130,6 +133,7 @@ export const ContactForm = () => {
             value={email}
             placeholder="Your Email"
             label="Email"
+            type="email"
             onChange={e => updateState({ email: e.target.value })}
           />
           <StyledInput
@@ -137,6 +141,7 @@ export const ContactForm = () => {
             value={subject}
             placeholder="Subject"
             label="Subject"
+            type="text"
             onChange={e => updateState({ subject: e.target.value })}
           />
           <StyledArea
@@ -145,6 +150,7 @@ export const ContactForm = () => {
             value={message}
             placeholder="Your Message"
             label="Message"
+            type="text"
             onChange={e => updateState({ message: e.target.value })}
           />
           <StyledButton type="submit">Submit</StyledButton>
