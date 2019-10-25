@@ -17,11 +17,20 @@ const StyledForm = styled.form`
   flex-direction: column;
   align-content: center;
   width: 75%;
+  @media (max-width: 515px) {
+ 
+    font-size: 14px;
+    margin-left: 15px;
+
+     }
+ 
+
 `;
 
 const StyledArea = styled.textarea`
   margin: 10px;
   border: 2px ${props => props.theme.colors.parBlue.light} solid;
+  height: 220px;
 
   :hover {
     border: 1px ${props => props.theme.colors.parBlue.light} solid;
@@ -63,7 +72,7 @@ const StyledButton = styled.button`
   :hover {
     border: 1px ${props => props.theme.colors.parBlue.light} solid;
     padding: 5px;
-    background-color: #bcffa7;
+    background-color: #4492c9;
   }
   :focus {
     outline: aliceblue;
@@ -72,6 +81,13 @@ const StyledButton = styled.button`
     outline-color: chartreuse;
     outline-width: thin;
   }
+  @media (max-width: 515px) {
+ 
+    font-size: 14px;
+
+ 
+  
+     }
 `;
 
 export const ContactForm = () => {

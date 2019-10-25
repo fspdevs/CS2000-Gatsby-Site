@@ -5,13 +5,23 @@ import { faBriefcase, faTrophy } from '@fortawesome/free-solid-svg-icons'
 import Fade from "react-reveal/Fade"
 
 const WhoRow1Wrap = styled.div`
-  margin-top: 20px;
+  margin-top: 190px;
   display: flex;
   flex-direction: row;
   align-content: center;
 //   width: 75%;
   height: 300px;
 //   width: 150px;
+@media (max-width: 900px) {
+  // width: 100% !important;
+height: 150px;
+}
+@media (max-width: 490px) {
+  // width: 100% !important;
+height: 150px;
+// width: 75% !important;
+margin-right: auto;
+}
 `;
 
 const WhoRow2Wrap = styled.div`
@@ -106,6 +116,11 @@ const WhoWeAre = () => {
 
           .who-text {
               max-width: 550px;
+           
+          }
+
+          .home-p {
+            font-size: 14px !important;
           }
 
           .wrapper {
@@ -114,6 +129,7 @@ const WhoWeAre = () => {
             flex-direction: column;
             align-content: center;
           }
+
 
           .icon-change {
               color: #232526;
@@ -149,6 +165,15 @@ const WhoWeAre = () => {
         //    width: 70px;
         //    height: 70px;
         // }
+        @media (max-width: 365px) {
+        .icon {
+         display: none;
+        }
+
+        .wrapper {
+          margin: 20px;
+        }
+      }
         `}
       </style>
     </>

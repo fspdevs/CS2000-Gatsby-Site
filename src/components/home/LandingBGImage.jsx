@@ -48,8 +48,7 @@ const LandingBGImage = ({ children, className }) => (
   left: 0;
   height: 600px;
   z-index: -100;
-
-  margin-top: -170px;
+  margin-top: 0px;
   
      
 `

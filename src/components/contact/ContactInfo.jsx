@@ -8,6 +8,7 @@ const H2 = styled.h2`
 const InfoWrap = styled.div`
   padding: 20px;
   width: 100%;
+  
 `;
 
 const StyledInfo = styled.form`
@@ -16,6 +17,14 @@ const StyledInfo = styled.form`
   flex-direction: column;
   align-content: center;
   width: 75%;
+ 
+     @media (max-width: 515px) {
+ 
+      font-size: 14px;
+      margin-left: 0px;
+
+    
+       }
 `;
 
 export const ContactInfo = () => {
@@ -45,6 +54,15 @@ export const ContactInfo = () => {
           </table>
         </StyledInfo>
       </InfoWrap>
+      <style jsx>
+        {`
+ 
+ @media (max-width: 515px) {
+  td {
+   font-size: 13px;
+  }
+        `}
+      </style>
     </>
   );
 };
