@@ -22,7 +22,6 @@ const StyledForm = styled.form`
     font-size: 14px;
     margin-left: 15px;
 
-  
      }
  
 
