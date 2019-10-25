@@ -3,6 +3,7 @@ import styled from '@emotion/styled';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {  faPhoneAlt } from '@fortawesome/free-solid-svg-icons';
 import Fade from "react-reveal/Fade"
+import { OutboundLink } from 'gatsby-plugin-google-analytics';
 
 const Wrapper= styled.footer`
   position: relative;
@@ -76,9 +77,9 @@ const Footer = () => (
     <TextBottom>
       <span>
         Capital Source 2000 -{' '}
-        <a href="http://fullspectrumprocessing.com/" target="_blank" style={{color: '#768daf'}}>
+        <OutboundLink href="http://fullspectrumprocessing.com/" target="_blank" style={{color: '#768daf'}}>
           Full Spectrum Processing
-        </a>
+        </OutboundLink>
       </span>
     </TextBottom>
 
