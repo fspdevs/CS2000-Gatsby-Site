@@ -2,6 +2,8 @@ import React from 'react';
 import styled from '@emotion/styled';
 import { colors } from '../../../config/theme';
 import { PortalImage } from './images';
+import Slide from 'react-reveal/Slide';
+import Bounce from 'react-reveal/Bounce';
 
 const PortalWrapper = styled.section`
   padding-top: 50px;
@@ -35,7 +37,7 @@ const H5 = styled.h5`
 const ImageWrap = styled.div`
   display: flex;
   flex-direction: column;
-  width: 20%;
+  width: 40%;
   justify-content: center;
   margin: 20px 15px;
 `;
@@ -48,8 +50,22 @@ const PortalRow = styled.div`
   margin-bottom: 40px;
 `;
 const LI = styled.li`
-  margin: 0;
+  font-size: 18px;
+  margin: 20px 0;
   list-style-type: none;
+  background-color: #e74c3c60;
+  padding: 5px;
+  font-family: 'Open Sans', -apple-system, 'BlinkMacSystemFont', 'Segoe UI',
+    'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 400;
+  color: black;
+  border-radius: 5px / 20px;
+  :hover {
+    background-color: #eb1d0080;
+    border: 2px outset ${colors.parBlue.light};
+    font-weight: 600;
+    padding: 10px 0;
+  }
 `;
 const UL = styled.ul`
   font-size: 14px;
@@ -83,13 +99,18 @@ const Portal = () => {
           <ImageWrap>
             <PortalImage />
           </ImageWrap>
+
           <UL>
-            <LI>User Friendly</LI>
-            <LI>Latest Web HTML5</LI>
-            <LI>Customer Support</LI>
-            <LI>24/7 Access</LI>
-            <LI>Custom Development</LI>
-            <LI>Rewards Program</LI>
+            <Slide right cascade>
+              <div>
+                <LI>User Friendly</LI>
+                <LI>Latest Web HTML5</LI>
+                <LI>Customer Support</LI>
+                <LI>24/7 Access</LI>
+                <LI>Custom Development</LI>
+                <LI>Rewards Program</LI>
+              </div>
+            </Slide>
           </UL>
         </PortalRow>
       </PortalWrapper>
