@@ -4,13 +4,21 @@ import styled from '@emotion/styled';
 const H2 = styled.h2`
   border-bottom: 1px ${props => props.theme.colors.parBlue.light} solid;
   padding-bottom: 10px;
-  // text-align: center;
 `;
 const AboutWrap = styled.div`
   padding: 75px 20px 0px 20px;
   width: 80%;
+  margin: 0 auto;
   max-width: 1000px;
-  // z-index: 2;
+  @media (max-width: 760px) {
+    // flex-wrap: wrap;
+    font-size: 16px;
+  }
+  @media (max-width: 433px) {
+    // flex-wrap: wrap;
+    font-size: 14px;
+  }
+ 
 `;
 
 
