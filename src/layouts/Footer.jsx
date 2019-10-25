@@ -6,6 +6,7 @@ import Fade from "react-reveal/Fade"
 
 const Wrapper= styled.footer`
   position: relative;
+
   // padding-top: 2rem;
   bottom: 0;
   box-shadow: ${props => props.theme.shadow.footer};
@@ -13,7 +14,7 @@ const Wrapper= styled.footer`
   font-family: ${props => props.theme.fontFamily.body};
   font-weight: 500;
   @media (max-width: ${props => props.theme.breakpoints.s}) {
-    padding-top: 7rem;
+    padding-top: 0rem;
   }
 `;
 const TopSection = styled.div`
