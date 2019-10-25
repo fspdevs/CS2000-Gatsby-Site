@@ -46,10 +46,12 @@ const H5 = styled.h5`
 `;
 const LI = styled.li`
   margin: 0;
+  list-style-type: none;
 `;
 const UL = styled.ul`
   font-size: 14px;
   font-family: lato;
+  margin: 0;
 `;
 
 const Model = () => {

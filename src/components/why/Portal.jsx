@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import { colors } from '../../../config/theme';
+import { PortalImage } from './images';
 
 const PortalWrapper = styled.section`
   padding-top: 50px;
@@ -25,10 +26,35 @@ const PortalTitle = styled.h4`
 `;
 
 const H5 = styled.h5`
-  font-size: 15px;
-  font-weight: 200;
+  font-size: 18px;
+  font-weight: 400;
   font-family: 'Open Sans', -apple-system, 'BlinkMacSystemFont', 'Segoe UI',
     'Roboto', 'Helvetica', 'Arial', sans-serif;
+  line-height: 2rem;
+`;
+const ImageWrap = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  justify-content: center;
+  margin: 20px 15px;
+`;
+const PortalRow = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 40%;
+  justify-content: space-between;
+  margin-bottom: 40px;
+`;
+const LI = styled.li`
+  margin: 0;
+  list-style-type: none;
+`;
+const UL = styled.ul`
+  font-size: 14px;
+  font-family: lato;
+  margin: 0;
 `;
 
 const Portal = () => {
@@ -53,6 +79,19 @@ const Portal = () => {
             iPads, laptops and a number of other devices.
           </H5>
         </PortalContainer>
+        <PortalRow>
+          <ImageWrap>
+            <PortalImage />
+          </ImageWrap>
+          <UL>
+            <LI>User Friendly</LI>
+            <LI>Latest Web HTML5</LI>
+            <LI>Customer Support</LI>
+            <LI>24/7 Access</LI>
+            <LI>Custom Development</LI>
+            <LI>Rewards Program</LI>
+          </UL>
+        </PortalRow>
       </PortalWrapper>
     </>
   );

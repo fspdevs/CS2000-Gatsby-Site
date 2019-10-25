@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import { colors } from '../../../config/theme';
+
 const OverWrapper = styled.section`
   padding-top: 100px;
   display: flex;
@@ -24,7 +25,8 @@ const OverTitle = styled.h4`
 const OverCol = styled.div`
   display: flex;
   flex-direction: column;
-  margin: 0 20px;
+  padding: 0 20px 0 0;
+  margin: 0 20px 0 0;
 `;
 const H5 = styled.h5`
   font-size: 16px;

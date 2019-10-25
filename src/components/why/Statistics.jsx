@@ -32,7 +32,6 @@ const StatsContent = styled.div`
 `;
 
 const ChartBox = styled.div`
-  width: 100%;
   margin: 5px 10px;
 `;
 
