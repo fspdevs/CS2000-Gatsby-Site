@@ -20,7 +20,7 @@ const Nav = styled.nav`
   font-weight: 500;
   font-size: 1.1rem;
   align-items: center;
- 
+
   // color: ${props => props.theme.gradient.leftToRight} !important;
   a {
     color: #383838 !important;
@@ -30,7 +30,9 @@ const Nav = styled.nav`
     &:hover {
       color: ${props => props.theme.colors.parBlue.light} !important;
       // color: #0C0E2D !important;
+
     } 
+
   }
 `;
 
