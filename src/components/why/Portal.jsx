@@ -3,7 +3,6 @@ import styled from '@emotion/styled';
 import { colors } from '../../../config/theme';
 import { PortalImage } from './images';
 import Slide from 'react-reveal/Slide';
-import Bounce from 'react-reveal/Bounce';
 
 const PortalWrapper = styled.section`
   padding-top: 50px;
