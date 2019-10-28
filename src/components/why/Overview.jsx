@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import { colors } from '../../../config/theme';
+import { colors, device } from '../../../config/theme';
 import Slide from 'react-reveal/Slide';
 
 const OverWrapper = styled.section`
@@ -14,6 +14,9 @@ const OverContainer = styled.div`
   display: flex;
   flex-direction: column;
   margin: 0 15%;
+  @media ${device.laptopL} {
+    margin: 0 10%;
+  }
 `;
 const OverTitle = styled.h4`
   font-size: 25px;
@@ -31,10 +34,17 @@ const OverCol = styled.div`
 `;
 const H5 = styled.h5`
   font-size: 16px;
+  @media ${device.mobileL} {
+    line-height: inherit;
+  }
 `;
 
 const ColWrapper = styled.v`
   display: flex;
+  @media ${device.laptop} {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 const LI = styled.li`

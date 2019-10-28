@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import { colors } from '../../../config/theme';
+import { colors, device } from '../../../config/theme';
 import { PortalImage } from './images';
 import Slide from 'react-reveal/Slide';
 
@@ -39,6 +39,19 @@ const ImageWrap = styled.div`
   width: 40%;
   justify-content: center;
   margin: 20px 15px;
+  @media ${device.laptop}{
+    width: 60%;
+  }
+  @media ${device.tablet} {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+  }
+  @media ${device.mobileL} {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
 `;
 const PortalRow = styled.div`
   display: flex;
@@ -47,6 +60,11 @@ const PortalRow = styled.div`
   width: 40%;
   justify-content: space-between;
   margin-bottom: 40px;
+  @media ${device.laptopL} {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
 `;
 const LI = styled.li`
   font-size: 18px;
