@@ -1,6 +1,7 @@
-import React, { useState, useEffect, useReducer } from 'react';
+import React, { useReducer } from 'react';
 import styled from '@emotion/styled';
-import { navigateTo } from "gatsby-link";
+import { navigateTo } from 'gatsby-link';
+import Fade from 'react-reveal/Fade';
 
 const H2 = styled.h2`
   border-bottom: 1px ${props => props.theme.colors.parBlue.light} solid;
@@ -11,7 +12,6 @@ const FormWrap = styled.div`
   width: 100%;
   min-height: 800px;
 `;
-
 const StyledForm = styled.form`
   margin: 0 auto;
   display: flex;
@@ -23,12 +23,10 @@ const StyledForm = styled.form`
     margin-left: 15px;
   }
 `;
-
 const StyledArea = styled.textarea`
   margin: 10px;
   border: 2px ${props => props.theme.colors.parBlue.light} solid;
   height: 220px;
-
   :hover {
     border: 1px ${props => props.theme.colors.parBlue.light} solid;
     padding: 5px;
@@ -51,7 +49,6 @@ const StyledInput = styled.input`
   :hover {
     border: 1px ${props => props.theme.colors.parBlue.light} solid;
   }
-
   :focus {
     outline: aliceblue;
     outline-offset: 5px;
@@ -60,7 +57,6 @@ const StyledInput = styled.input`
     outline-width: 3px;
   }
 `;
-
 const StyledButton = styled.button`
   align-self: center;
   margin: 10px;
@@ -71,7 +67,6 @@ const StyledButton = styled.button`
     padding: 5px;
     background-color: #4492c9;
   }
-
   :focus {
     outline: aliceblue;
     outline-offset: 5px;
@@ -92,22 +87,18 @@ export const ContactForm = () => {
       .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
       .join('&');
   }
-  // const [name, setName] = useState('')
-  // const [email, setEmail] = useState('')
-  // const [subject, setSubject] = useState('')
-  // const [message, setMessage] = useState('')
 
+  // setting inital state to empty strings
   const [state, updateState] = useReducer(
     (state, newstate) => ({ ...state, ...newstate }),
     { name: '', email: '', subject: '', message: '' }
   );
-
   const { name, email, subject, message } = state;
 
-  // TODO: Add logic to send form data
+  // submit function that sends data to Netlify
   function submission(e) {
     e.preventDefault();
-    console.log(name, email, subject, message);
+
     if (state) {
       console.log(state, 'this is state');
       //if state is populated send data to netlefy
@@ -128,21 +119,17 @@ export const ContactForm = () => {
   return (
     <>
       <FormWrap>
-        {/* TODO: Add attributes and hidden elements to point towards Netlify */}
-        <StyledForm onSubmit={submission}  className="form"
-            data-netlify-honeypot="bot-field"
-            method="post"
-            action="/"
-            data-netlify="true"
-            name="contact">
-          {/* <form
+        <Fade right>
+          <StyledForm
+            onSubmit={submission}
             className="form"
+            // attributes to connect to netlify
             data-netlify-honeypot="bot-field"
             method="post"
             action="/"
             data-netlify="true"
             name="contact"
-          > */}
+          >
             <H2>Keep In Touch</H2>
 
             {/* netlify form configuration hidden inputs */}
@@ -183,8 +170,8 @@ export const ContactForm = () => {
               onChange={e => updateState({ message: e.target.value })}
             />
             <StyledButton type="submit">Submit</StyledButton>
-          {/* </form> */}
-        </StyledForm>
+          </StyledForm>
+        </Fade>
       </FormWrap>
     </>
   );
