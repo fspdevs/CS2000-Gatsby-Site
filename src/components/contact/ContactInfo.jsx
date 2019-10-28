@@ -16,10 +16,10 @@ const StyledInfo = styled.form`
   flex-direction: column;
   align-content: center;
   width: 75%;
-     @media (max-width: 515px) {
-      font-size: 14px;
-      margin-left: 0px;
-       }
+  @media (max-width: 515px) {
+    font-size: 14px;
+    margin-left: 0px;
+  }
 `;
 
 export const ContactInfo = () => {
@@ -28,6 +28,7 @@ export const ContactInfo = () => {
       <InfoWrap>
         <StyledInfo>
           <Fade left>
+
           <H2>Contact Info</H2>
           
           <p>
@@ -48,6 +49,7 @@ export const ContactInfo = () => {
               <td>info@capitalsource2000.com</td>
             </tr>
           </table>
+
           </Fade>
         </StyledInfo>
       </InfoWrap>

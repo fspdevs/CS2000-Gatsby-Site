@@ -19,18 +19,16 @@ const Dedication = () => {
   return (
     <>
       <DedicationWrap>
-       
-          <H2>Dedication</H2>
-          
-          <p className="portfolio-text">
-            {' '}
-            Capital Source 2000 is dedicated to enhancing your business's productivity while providing 
-            the best quality of service.
-          </p>
-          
+        <H2>Dedication</H2>
+
+        <p className="portfolio-text">
+          {' '}
+          Capital Source 2000 is dedicated to enhancing your business's
+          productivity while providing the best quality of service.
+        </p>
       </DedicationWrap>
     </>
   );
 };
 
-export default Dedication
+export default Dedication;
