@@ -22,7 +22,7 @@ export const PortalImage = () => {
 export const fluidImage = graphql`
   fragment fluidImage on File {
     childImageSharp {
-      fluid(maxWidth: 900) {
+      fluid(maxWidth: 1000) {
         ...GatsbyImageSharpFluid
       }
     }

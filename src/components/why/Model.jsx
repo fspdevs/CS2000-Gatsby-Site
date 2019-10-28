@@ -3,12 +3,14 @@ import styled from '@emotion/styled';
 import { ImageOne, ImageTwo, ImageThree } from './images';
 import Fade from 'react-reveal/Fade';
 import Pulse from 'react-reveal/Pulse';
+import { device } from '../../../config/theme';
 
 const ModelWrapper = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
   background: #ecf0f1;
+  width: 100%;
 `;
 const ModelContainer = styled.div`
   display: flex;
@@ -17,9 +19,18 @@ const ModelContainer = styled.div`
 const Box = styled.div`
   display: flex;
   flex-direction: column;
-  width: 20%;
+  width: 400px;
   justify-content: center;
   margin: 20px 15px;
+  @media ${device.laptopL} {
+    width: 300px;
+  }
+  @media ${device.laptop}{
+    width: 30%;
+  }
+  @media ${device.mobileL}{
+    width: 80%;
+  }
 `;
 const Subtitle = styled.div`
   display: flex;
@@ -35,12 +46,17 @@ const P = styled.p`
   line-height: 20px;
   margin-bottom: 0;
   color: #666;
+  @media ${device.mobileL}{
+    font-weight: bold;
+  }
 `;
 const H3 = styled.h3`
-font-weight: 600;
+  font-weight: 600;
   font-size: 30px;
   margin: 30px;
-  font-family: 'Open Sans',-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif;
+  text-shadow: 1px 2px  5px grey;
+  font-family: 'Open Sans', -apple-system, 'BlinkMacSystemFont', 'Segoe UI',
+    'Roboto', 'Helvetica', 'Arial', sans-serif;
 `;
 
 const H5 = styled.h5`
@@ -53,9 +69,18 @@ const LI = styled.li`
 const UL = styled.ul`
   font-size: 14px;
   font-family: lato;
-  margin: 0;
+  margin: 10px 0;
 `;
-
+const Div = styled.div`
+  align-items: flex-start;
+  display: flex;
+  @media ${device.mobileL} {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    align-items: center; 
+  }
+`;
 const Model = () => {
   return (
     <>
@@ -68,7 +93,7 @@ const Model = () => {
         </Pulse>
         <ModelContainer>
           <Fade bottom cascade>
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
+            <Div>
               <Box>
                 <ImageOne />
                 <Subtitle>
@@ -105,7 +130,7 @@ const Model = () => {
                   </P>
                 </Subtitle>
               </Box>
-            </div>
+            </Div>
           </Fade>
         </ModelContainer>
       </ModelWrapper>
