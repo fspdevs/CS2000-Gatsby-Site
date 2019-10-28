@@ -12,21 +12,16 @@ const ContactWrap = styled.div`
   flex-direction: row;
   justify-content: space-around;
   @media (max-width: 960px) {
- 
     flex-wrap: wrap;
-     }
-
-     @media (max-width: 515px) {
-
-      margin-top: 0px;
-  
-    
-       }
+  }
+  @media (max-width: 515px) {
+    margin-top: 0px;
+  }
 `;
 const Spacer = styled.div`
-  
   height: 20px;
 `;
+
 const Contact = () => {
   return (
     <Layout>

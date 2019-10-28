@@ -4,13 +4,9 @@ import styled from '@emotion/styled';
 import LandingBGImage from '../components/home/LandingBGImage';
 import { Header } from 'components';
 import { Layout } from 'layouts';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { faBriefcase, faTrophy } from '@fortawesome/free-solid-svg-icons'
 import WhoWeAre from '../components/home/WhoWeAre';
 import Results from '../components/home/Results';
-import Fade from "react-reveal/Fade"
-
-// const element = <FontAwesomeIcon icon={faCoffee} />
+import Fade from 'react-reveal/Fade';
 
 const HomeWrapperRow1 = styled.div`
   display: flex;
@@ -32,14 +28,7 @@ const HomeWrapperRow2 = styled.div`
   flex-direction: row;
   max-width: 70% !important;
   margin: 0 auto;
-  //margin: 20px;
-  // margin: 4rem 4rem 1rem 4rem;
-  // @media (max-width: 1000px) {
-  //   margin: 4rem 2rem 1rem 2rem;
-
-  // }
   @media (max-width: 900px) {
-    // width: 100% !important;
     margin: 0 auto;
     margin-left: 0px;
     flex-wrap: wrap;
@@ -53,19 +42,18 @@ const Index = () => {
     <Layout>
       <Helmet title={'Home Page'} defer={false} />
       <Header title="CAPITAL SOURCE 2000"></Header>
-
+      {/* background image with overlay  */}
       <LandingBGImage>
         <div id="my-overlay-landing"></div>
       </LandingBGImage>
+      
       <HomeWrapperRow1>
-  
         <div>
-        <Fade bottom>
-          <p className="line-1 headline">Profit through</p>
-          <p className="line-2 headline">small business</p>
+          <Fade bottom>
+            <p className="line-1 headline">Profit through</p>
+            <p className="line-2 headline">small business</p>
           </Fade>
         </div>
-      
       </HomeWrapperRow1>
       <HomeWrapperRow2>
         <WhoWeAre />
@@ -149,7 +137,6 @@ const Index = () => {
               height: 80px;
             }
           }
-
 
           @media (max-width: 360px) {
             .headline {
