@@ -40,7 +40,7 @@ const ImageWrap = styled.div`
   width: 40%;
   justify-content: center;
   margin: 20px 15px;
-  @media ${device.laptop}{
+  @media ${device.laptop} {
     width: 60%;
   }
   @media ${device.tablet} {

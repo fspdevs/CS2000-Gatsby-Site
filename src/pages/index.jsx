@@ -46,7 +46,7 @@ const Index = () => {
       <LandingBGImage>
         <div id="my-overlay-landing"></div>
       </LandingBGImage>
-      
+
       <HomeWrapperRow1>
         <div>
           <Fade bottom>
