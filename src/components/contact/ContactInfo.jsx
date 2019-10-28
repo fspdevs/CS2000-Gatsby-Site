@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
+import Fade from 'react-reveal/Fade';
 
 const H2 = styled.h2`
   border-bottom: 1px ${props => props.theme.colors.parBlue.light} solid;
@@ -8,18 +9,14 @@ const H2 = styled.h2`
 const InfoWrap = styled.div`
   padding: 20px;
   width: 100%;
-  
 `;
-
 const StyledInfo = styled.form`
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-content: center;
   width: 75%;
- 
      @media (max-width: 515px) {
- 
       font-size: 14px;
       margin-left: 0px;
 
@@ -32,6 +29,7 @@ export const ContactInfo = () => {
     <>
       <InfoWrap>
         <StyledInfo>
+          <Fade left>
           <H2>Contact Info</H2>
           
           <p>
@@ -52,6 +50,7 @@ export const ContactInfo = () => {
               <td>info@capitalsource2000.com</td>
             </tr>
           </table>
+          </Fade>
         </StyledInfo>
       </InfoWrap>
       <style jsx>
