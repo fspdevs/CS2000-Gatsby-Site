@@ -20,10 +20,11 @@ const OverContainer = styled.div`
 `;
 const OverTitle = styled.h4`
   font-size: 25px;
-  border-bottom: 1px ${colors.parGrey.mediumLight} solid;
+  border-bottom: 1px ${colors.parBlue.light} solid;
   padding-bottom: 10px;
   align-self: start;
   width: 100%;
+  text-shadow: 1px 1px 5px ${colors.parBlue.dark};
 `;
 
 const OverCol = styled.div`

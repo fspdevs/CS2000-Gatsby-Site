@@ -51,10 +51,11 @@ margin: 0 auto;
 `;
 const StatsTitle = styled.h4`
   font-size: 25px;
-  border-bottom: 1px ${colors.parGrey.mediumLight} solid;
+  border-bottom: 1px ${colors.parBlue.light} solid;
   padding-bottom: 10px;
   margin: 10px 20px 10px 0px;
   text-align: left;
+  text-shadow: 1px 1px 5px ${colors.parBlue.dark};
   @media ${device.desktop} {
     align-self: flex-start;
     width: 100%;
