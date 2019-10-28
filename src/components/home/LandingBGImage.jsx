@@ -15,7 +15,7 @@ const LandingBGImage = ({ children, className }) => (
             }
           }
         }
-
+      }
       `}
 
       render={data => {
@@ -53,6 +53,3 @@ const StyledBackgroundSection = styled(LandingBGImage)`
 export default  StyledBackgroundSection
 
 
-
-
-export default StyledBackgroundSection;

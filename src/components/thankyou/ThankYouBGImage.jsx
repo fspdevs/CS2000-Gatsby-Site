@@ -17,7 +17,6 @@ const LandingBGImage = ({ children, className }) => (
             }
           }
         }
-      }
     `}
     render={data => {
       // Set ImageData.

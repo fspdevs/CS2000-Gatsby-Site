@@ -15,7 +15,7 @@ const AboutBGImage = ({ children, className }) => (
             }
           }
         }
-
+      }
       `}
 
       render={data => {

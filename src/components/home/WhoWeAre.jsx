@@ -45,13 +45,6 @@ const WhoWeAre = () => {
 
   };
 
-  const unHoverWho = () => {
-    console.log('unhover');
-    setState({
-      ...state,
-      hoverWho: false,
-    });
-  };
   return (
     <>
       <div className="wrapper">
