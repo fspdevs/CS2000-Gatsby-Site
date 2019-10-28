@@ -27,6 +27,7 @@ const AboutBGImage = ({ children, className }) => (
             Tag="section"
             className={className}
             fluid={imageData}
+            alt=""
             backgroundColor={`#040e18`}
           >
         {children}
@@ -41,7 +42,6 @@ const AboutBGImage = ({ children, className }) => (
   width: 100vw;
   background-position: bottom center;
   background-repeat: repeat-x;
-  // background-size: cover;
   filter: brightness(93%);
   position: absolute !important;
   min-height: 1020px;

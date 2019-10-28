@@ -3,7 +3,8 @@ import { Link } from 'gatsby';
 import styled from '@emotion/styled';
 import Headroom from 'react-headroom';
 import logo from '../../static/logo/cslogo.png';
-import { slide as Menu } from 'react-burger-menu';
+import { slide as Menu } from "react-burger-menu"
+
 
 const StyledLink = styled(Link)`
   display: flex;
@@ -31,6 +32,7 @@ const Nav = styled.nav`
 `;
 
 const NavBar = () => (
+  
   <Headroom calcHeightOnResize disableInlineStyles>
     <StyledLink to="/">
       <img src={logo} alt="Gatsby Logo" />
@@ -61,26 +63,24 @@ const NavBar = () => (
       </div>
     </Nav>
 
-    {/* header toggle menu */}
-    <Menu right>
-      <Link className="menu-item nav" to="/">
-        Home
-      </Link>
-      <Link to="/about" className="menu-item nav">
-        About Us
-      </Link>
-      <Link to="/whyus" className="menu-item nav">
-        Why Us
-      </Link>
-      <Link to="/contact" className="menu-item nav">
-        Contact Us
-      </Link>
-    </Menu>
+          {/* header toggle menu */}
+          <Menu right>
+        <Link className="menu-item nav" to="/">
+          Home
+        </Link>
+        <Link to="/about" className="menu-item nav">
+          About Us
+        </Link>
+        <Link to="/whyus" className="menu-item nav">
+          Why Us
+        </Link>
+        <Link to="/contact" className="menu-item nav">
+          Contact Us
+        </Link>
+      </Menu>
     <style jsx>
       {`
-         {
-          /* code to help underline be contained to link container only */
-        }
+         {/* code to help underline be contained to link container only */}
         .nav,
         .nav:after,
         .nav:before {
@@ -96,9 +96,7 @@ const NavBar = () => (
           outline: none;
         }
 
-         {
-          /* sets up the nav hover underline */
-        }
+        {/* sets up the nav hover underline */}
         div > .nav:before {
           content: '';
           position: absolute;
@@ -120,18 +118,16 @@ const NavBar = () => (
           transform: scaleX(1);
         }
 
-         {
-          /* fix for making home underline shorter */
-        }
+        {/* fix for making home underline shorter */}
         div > .home-nav:before {
           width: 80%;
           left: 26px;
         }
-         {
-          /* active link styles */
-        }
+       
+        {/* active link styles */}
         div > .nav-active,
-        a > .nav-active {
+        a > .nav-active
+         {
           content: '';
           width: 100%;
           height: 3px;
@@ -141,6 +137,7 @@ const NavBar = () => (
           color: #4492c9 !important;
         }
 
+     
         .css-1yrnvmk-NavBar--Nav {
           margin-left: auto;
         }
@@ -154,10 +151,10 @@ const NavBar = () => (
         #App {
           font-family: sans-serif;
           /* Give app full page to work with */
-          height: 100vh;
+          height: 100vh ;
         }
 
-        #page-wrap {
+         #page-wrap { 
           text-align: center;
           /* Prevent sidebar from showing a scrollbar on page */
           overflow: auto;
@@ -169,13 +166,13 @@ const NavBar = () => (
           /* Our sidebar item styling */
           text-decoration: none;
           margin-bottom: 10px;
-          color: #f0f0f0;
+           color: #f0f0f0;
           transition: color 0.2s;
         }
 
         /* Change color on hover */
         .bm-item:hover {
-          color: #4492c9;
+           color: #4492C9;
         }
 
         /* The rest copied directly from react-burger-menu docs */
@@ -190,12 +187,12 @@ const NavBar = () => (
 
         /* Color/shape of burger icon bars */
         .bm-burger-bars {
-          background: grey;
+           background: grey;
           display: none;
         }
 
         .bm-burger-bars:hover {
-          background: #757778;
+         background: #757778;
         }
 
         /* Position and sizing of clickable cross button */
@@ -210,12 +207,14 @@ const NavBar = () => (
         }
 
         .bm-menu-wrap {
-          position: fixed;
-          height: 100%;
-        }
+          // display:none
+         position: fixed;
+        height: 100%;
+        } 
 
         /* General sidebar styles */
         .bm-menu {
+         
           background: #373838;
           padding: 2.5em 1.5em 0;
           font-size: 1.15em;
@@ -230,24 +229,23 @@ const NavBar = () => (
 
         /* Wrapper for item list */
         .bm-item-list {
-          color: #4492c9;
+          color: #4492C9;
         }
 
         /* Styling of overlay */
         .bm-overlay {
           background: rgba(0, 0, 0, 0.3);
-          background: #757778;
+           background: #757778;
         }
 
         @media only screen and (max-width: 780px) {
           .nav {
             display: none;
           }
-
           header {
             position: fixed;
+            
           }
-
           .bm-burger-bars {
             display: block;
           }

@@ -41,7 +41,7 @@ export const ContactInfo = () => {
           <table>
             <tr>
               <th>Phone</th>
-              <td>(215) 291 - 7722</td>
+              <td>(215) 291-7722</td>
             </tr>
             <tr>
               <th>Email</th>

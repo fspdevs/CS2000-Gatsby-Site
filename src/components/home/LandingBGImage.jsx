@@ -27,10 +27,10 @@ const LandingBGImage = ({ children, className }) => (
             Tag="section"
             className={className}
             fluid={imageData}
+            alt=""
             backgroundColor={`#040e18`}
           >
         {children}
-           
           </BackgroundImage>
         )
       }}
@@ -43,14 +43,11 @@ const LandingBGImage = ({ children, className }) => (
   background-position: bottom center;
   background-repeat: no-repeat;
   background-size: cover;
-//   filter: brightness(93%);
   position: absolute !important;
   left: 0;
   height: 600px;
   z-index: -100;
   margin-top: 0px;
-  
-     
 `
 
 export default  StyledBackgroundSection

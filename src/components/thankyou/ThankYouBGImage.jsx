@@ -6,6 +6,8 @@ import BackgroundImage from 'gatsby-background-image'
 
 const LandingBGImage = ({ children, className }) => (
   // image query 
+
+
     <StaticQuery
       query={graphql`
         query {
@@ -48,9 +50,6 @@ const LandingBGImage = ({ children, className }) => (
   height: 100%;
   z-index: -100;    
 `
-const H2 = styled.h2`
-  border-bottom: 1px ${props => props.theme.colors.parBlue.light} solid;
-  padding-bottom: 10px;
-`;
+
 export default  StyledBackgroundSection
 

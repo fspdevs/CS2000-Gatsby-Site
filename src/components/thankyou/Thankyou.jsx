@@ -27,29 +27,13 @@ const ThankYou = () => (
         {`
           .thank-you-section {
             height: 875px;
-            // background: rgb(68,146,201);
-            // background: linear-gradient(342deg, rgba(68,146,201,1) 0%, rgba(34,72,99,1) 
-            // 100%);
-
             background: rgb(255,255,255);
             background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(157,157,157,1) 100%);
           }
 
-        //   #my-overlay-thank {
-        //     height: 875px;
-        //     opacity: 0.4;
-        //     background: white;
-        //     width: 100vw;
-        //   }
-
-     
-
           .thank-you-container {
-            margin: 0 auto;
-         
+            margin: 0 auto;        
             max-width: 1366px;
-            
-            
           }
 
           .thank-you-title {
@@ -59,8 +43,6 @@ const ThankYou = () => (
             padding-top: 300px;
             color: black;
             font-family: 'Candal',-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif;
-        
-    
           }
 
           .thank-you-sub {
@@ -69,7 +51,6 @@ const ThankYou = () => (
             text-align: center;
             color: black;
             font-family: 'Candal',-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif;
-            // border-bottom: 1px blue solid;
           }
 
           @media only screen and (max-width: 600px) {

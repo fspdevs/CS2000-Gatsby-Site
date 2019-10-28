@@ -11,17 +11,12 @@ const AboutWrap = styled.div`
   margin: 0 auto;
   max-width: 1000px;
   @media (max-width: 760px) {
-    // flex-wrap: wrap;
     font-size: 16px;
   }
   @media (max-width: 433px) {
-    // flex-wrap: wrap;
     font-size: 14px;
   }
- 
 `;
-
-
 
 const AboutMain = () => {
   return (
