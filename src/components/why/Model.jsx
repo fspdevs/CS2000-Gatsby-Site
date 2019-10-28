@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 import { ImageOne, ImageTwo, ImageThree } from './images';
 import Fade from 'react-reveal/Fade';
 import Pulse from 'react-reveal/Pulse';
-import { device } from '../../../config/theme';
+import { colors, device } from '../../../config/theme';
 
 const ModelWrapper = styled.section`
   display: flex;
@@ -42,7 +42,7 @@ const Subtitle = styled.div`
 
 const P = styled.p`
   font-family: lato;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 20px;
   margin-bottom: 0;
   color: #666;
@@ -54,7 +54,7 @@ const H3 = styled.h3`
   font-weight: 600;
   font-size: 30px;
   margin: 30px;
-  text-shadow: 1px 2px  5px grey;
+  text-shadow: 1px 2px  5px ${colors.parBlue.dark};
   font-family: 'Open Sans', -apple-system, 'BlinkMacSystemFont', 'Segoe UI',
     'Roboto', 'Helvetica', 'Arial', sans-serif;
 `;
