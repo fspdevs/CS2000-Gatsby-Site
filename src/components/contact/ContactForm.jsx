@@ -120,7 +120,7 @@ export const ContactForm = () => {
         }),
       })
         // then go to thank you page
-        .then(() => navigateTo('/'))
+        .then(() => navigateTo('/thankyou'))
         .catch(error => alert(error));
     }
   }
