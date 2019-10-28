@@ -19,8 +19,6 @@ const StyledInfo = styled.form`
      @media (max-width: 515px) {
       font-size: 14px;
       margin-left: 0px;
-
-    
        }
 `;
 
