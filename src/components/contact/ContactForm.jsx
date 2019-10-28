@@ -74,7 +74,6 @@ const StyledButton = styled.button`
     outline-color: chartreuse;
     outline-width: thin;
   }
-
   @media (max-width: 515px) {
     font-size: 14px;
   }
