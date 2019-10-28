@@ -25,10 +25,10 @@ const Box = styled.div`
   @media ${device.laptopL} {
     width: 300px;
   }
-  @media ${device.laptop}{
+  @media ${device.laptop} {
     width: 30%;
   }
-  @media ${device.mobileL}{
+  @media ${device.mobileL} {
     width: 80%;
   }
 `;
@@ -46,7 +46,7 @@ const P = styled.p`
   line-height: 20px;
   margin-bottom: 0;
   color: #666;
-  @media ${device.mobileL}{
+  @media ${device.mobileL} {
     font-weight: bold;
   }
 `;
@@ -54,7 +54,7 @@ const H3 = styled.h3`
   font-weight: 600;
   font-size: 30px;
   margin: 30px;
-  text-shadow: 1px 2px  5px ${colors.parBlue.dark};
+  text-shadow: 1px 2px 5px ${colors.parBlue.dark};
   font-family: 'Open Sans', -apple-system, 'BlinkMacSystemFont', 'Segoe UI',
     'Roboto', 'Helvetica', 'Arial', sans-serif;
 `;
@@ -78,7 +78,7 @@ const Div = styled.div`
     display: flex;
     flex-direction: column;
     margin: 20px;
-    align-items: center; 
+    align-items: center;
   }
 `;
 const Model = () => {

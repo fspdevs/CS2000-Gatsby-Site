@@ -26,7 +26,7 @@ const Nav = styled.nav`
     transition: all ${props => props.theme.transitions.default.duration};
     &:hover {
       color: ${props => props.theme.colors.parBlue.light} !important;
-    } 
+    }
   }
 `;
 

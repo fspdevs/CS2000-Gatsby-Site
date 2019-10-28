@@ -12,27 +12,22 @@ const DedicationWrap = styled.div`
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  // @media (max-width: 760px) {
-  //   row-wrap: wrap;
-  // }
 `;
 
 const Dedication = () => {
   return (
     <>
       <DedicationWrap>
-       
-          <H2>Dedication</H2>
-          
-          <p className="portfolio-text">
-            {' '}
-            Capital Source 2000 is dedicated to enhancing your business's productivity while providing 
-            the best quality of service.
-          </p>
-          
+        <H2>Dedication</H2>
+
+        <p className="portfolio-text">
+          {' '}
+          Capital Source 2000 is dedicated to enhancing your business's
+          productivity while providing the best quality of service.
+        </p>
       </DedicationWrap>
     </>
   );
 };
 
-export default Dedication
+export default Dedication;

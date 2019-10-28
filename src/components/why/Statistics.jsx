@@ -31,7 +31,7 @@ const StatsContainer = styled.div`
   }
 `;
 const StatsCol = styled.div`
-margin: 0 auto;
+  margin: 0 auto;
   @media ${device.laptop} {
     width: 90%;
     padding: 0px 15px;
@@ -79,7 +79,6 @@ const StatsContent = styled.div`
     width: 70%;
     padding: 0 30px;
     display: flex;
-  
   }
   @media ${device.mobileL} {
     align-items: center;
