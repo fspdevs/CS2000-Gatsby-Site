@@ -75,6 +75,7 @@ const Footer = () => (
             href="http://fullspectrumprocessing.com/"
             target="_blank"
             rel="noopener noreferrer"
+
             style={{ color: '#768daf' }}
           >
             Full Spectrum Processing

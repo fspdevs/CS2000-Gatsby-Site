@@ -9,27 +9,24 @@ const WhoRow1Wrap = styled.div`
   display: flex;
   flex-direction: row;
   align-content: center;
-  //   width: 75%;
   height: 300px;
-  //   width: 150px;
+
   @media (max-width: 900px) {
-    // width: 100% !important;
     height: 150px;
   }
   @media (max-width: 490px) {
-    // width: 100% !important;
     height: 150px;
-    // width: 75% !important;
+
     margin-right: auto;
   }
 `;
 
-// set initial state
 const WhoWeAre = () => {
   const [state, setState] = useState({
     hoverWho: false,
     hoverResults: false,
   });
+
 
   // hover state update mouse over 
   const hoverWho = () => {
@@ -37,6 +34,7 @@ const WhoWeAre = () => {
       ...state,
       hoverWho: true,
     });
+
   };
   // hover state return to false mouse off
   const unHoverWho = () => {
@@ -44,19 +42,30 @@ const WhoWeAre = () => {
       ...state,
       hoverWho: false,
     });
+
   };
 
+  const unHoverWho = () => {
+    console.log('unhover');
+    setState({
+      ...state,
+      hoverWho: false,
+    });
+  };
   return (
     <>
       <div className="wrapper">
+
         {/* animation fade */}
         <Fade left>
           {/* area wrapper that calls mouse hover events */}
+
           <WhoRow1Wrap
             onMouseEnter={hoverWho}
             onMouseLeave={unHoverWho}
             className="section-who"
           >
+
             {/* icon section */}
             <FontAwesomeIcon
               icon={faBriefcase}
@@ -69,6 +78,7 @@ const WhoWeAre = () => {
                   : { color: 'black', border: '2px solid black' }
               }
             />
+
             {/* text section */}
             <div className="who-text">
               <h2
@@ -88,6 +98,7 @@ const WhoWeAre = () => {
           </WhoRow1Wrap>
         </Fade>
       </div>
+
       <style jsx>
         {`
           .icon {

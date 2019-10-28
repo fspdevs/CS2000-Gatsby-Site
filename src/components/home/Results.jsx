@@ -25,13 +25,16 @@ const Results = () => {
 
   // on mouse hover state change
   const hoverWho = () => {
+
     setState({
       ...state,
       hoverWho: true,
     });
+
   };
   // mouse off state return to false
   const unHoverWho = () => {
+
     setState({
       ...state,
       hoverWho: false,
@@ -40,6 +43,7 @@ const Results = () => {
 
   return (
     <>
+
     {/* wrapper that triggers the hover events  */}
       <div className="wrapper">
         <Fade right>
@@ -60,6 +64,7 @@ const Results = () => {
                   : { color: 'black', border: '2px solid black' }
               }
             />
+
             {/* text section */}
             <div className="who-text">
               <h2
@@ -79,6 +84,7 @@ const Results = () => {
           </ResultsRow1Wrap>
         </Fade>
       </div>
+
       <style jsx>
         {`
           .icon {

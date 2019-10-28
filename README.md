@@ -1,5 +1,6 @@
-## TODO: 
-+ Media Queries
+## TODO:
+
+- Media Queries
 
 ## Features
 
@@ -28,16 +29,6 @@
   - Google Lighthouse Optimization
 
 # Lighthouse Audit
-
-<p align="center">
-  <a href="https://github.com/justinformentin/gatsby-v2-tutorial-starter">
-    <img
-      src="https://i.imgur.com/YOVC76X.png"
-      alt="Google Lighthouse Audit"
-      title="Google Lighthouse Audit"
-    />
-  </a>
-</p>
 
 # Usage
 
@@ -71,6 +62,7 @@ npm format
 ```
 
 ## Folder structure
+
 ```bash
 ├──.circleci # Circleci integration
 ├── config # Theme and site metadata

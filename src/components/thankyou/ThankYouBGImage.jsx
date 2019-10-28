@@ -1,13 +1,10 @@
-import React from 'react'
-import { graphql, StaticQuery } from 'gatsby'
-import styled from 'styled-components'
-import BackgroundImage from 'gatsby-background-image'
-
+import React from 'react';
+import { graphql, StaticQuery } from 'gatsby';
+import styled from 'styled-components';
+import BackgroundImage from 'gatsby-background-image';
 
 const LandingBGImage = ({ children, className }) => (
   // image query 
-
-
     <StaticQuery
       query={graphql`
         query {
@@ -16,31 +13,31 @@ const LandingBGImage = ({ children, className }) => (
               fluid(quality: 90, maxWidth: 1920) {
                 ...GatsbyImageSharpFluid_withWebp
               }
+
             }
           }
         }
-      `}
+      }
+    `}
+    render={data => {
+      // Set ImageData.
+      const imageData = data.desktop.childImageSharp.fluid;
+      return (
+        <BackgroundImage
+          Tag="section"
+          className={className}
+          alt=""
+          fluid={imageData}
+          backgroundColor={`#040e18`}
+        >
+          {children}
+        </BackgroundImage>
+      );
+    }}
+  />
+);
 
-      render={data => {
-        // Set ImageData.
-        const imageData = data.desktop.childImageSharp.fluid
-        return (
-          <BackgroundImage
-            Tag="section"
-            className={className}
-            alt=""
-            fluid={imageData}
-            backgroundColor={`#040e18`}
-          >
-        {children}
-           
-          </BackgroundImage>
-        )
-      }}
-    />
-  )
-
-  const StyledBackgroundSection = styled(LandingBGImage)`
+const StyledBackgroundSection = styled(LandingBGImage)`
   width: 100%;
   background-position: bottom center;
   background-repeat: repeat;
@@ -52,4 +49,5 @@ const LandingBGImage = ({ children, className }) => (
 `
 
 export default  StyledBackgroundSection
+
 

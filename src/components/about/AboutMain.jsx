@@ -22,17 +22,21 @@ const AboutMain = () => {
   return (
     <>
       <AboutWrap>
-       
-          <H2>About Us</H2>
-          
-          <p className="about-text">
-            {' '}
-            Capital Source 2000 Inc. is a growing leader in the alternative finance industry established by banking and factoring industry veterans in 2015. Our company takes great pride in helping small businesses achieve their full potential by providing the working capital they need to grow their business. We utilize exclusive working relationships with our partners to service our clients, finding the best clients through rigorous non-algorithmic underwriting.
-          </p>
-          
+        <H2>About Us</H2>
+
+        <p className="about-text">
+          {' '}
+          Capital Source 2000 Inc. is a growing leader in the alternative
+          finance industry established by banking and factoring industry
+          veterans in 2015. Our company takes great pride in helping small
+          businesses achieve their full potential by providing the working
+          capital they need to grow their business. We utilize exclusive working
+          relationships with our partners to service our clients, finding the
+          best clients through rigorous non-algorithmic underwriting.
+        </p>
       </AboutWrap>
     </>
   );
 };
 
-export default AboutMain
+export default AboutMain;
