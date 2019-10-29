@@ -9,7 +9,6 @@ const WhoRow1Wrap = styled.div`
   display: flex;
   flex-direction: row;
   align-content: center;
-
   height: 300px;
 
   @media (max-width: 900px) {
@@ -28,36 +27,43 @@ const WhoWeAre = () => {
     hoverResults: false,
   });
 
-  const hoverWho = () => {
-    console.log('in here');
 
+  // hover state update mouse over 
+  const hoverWho = () => {
     setState({
       ...state,
       hoverWho: true,
     });
 
-    console.log(state);
   };
-
+  // hover state return to false mouse off
   const unHoverWho = () => {
-    console.log('unhover');
     setState({
       ...state,
       hoverWho: false,
     });
+
   };
+
   return (
     <>
       <div className="wrapper">
+
+        {/* animation fade */}
         <Fade left>
+          {/* area wrapper that calls mouse hover events */}
+
           <WhoRow1Wrap
             onMouseEnter={hoverWho}
             onMouseLeave={unHoverWho}
             className="section-who"
           >
+
+            {/* icon section */}
             <FontAwesomeIcon
               icon={faBriefcase}
               size="2x"
+              alt="Breifcase Icon"
               className="icon  icon-change icon-spin"
               style={
                 state.hoverWho
@@ -66,6 +72,7 @@ const WhoWeAre = () => {
               }
             />
 
+            {/* text section */}
             <div className="who-text">
               <h2
                 className="icon-change"

@@ -16,29 +16,9 @@ const Wrapper = styled.header`
   overflow: hidden;
 `;
 
-const Text = styled.div`
-  color: ${props => props.theme.gradient.rightToLeft};
-  z-index: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  width: 100%;
-  max-width: ${props => props.theme.layout.base};
-  padding: 0 2rem;
-  margin-bottom: 3rem;
-  align-items: center;
-`;
 
-const Subtitle = styled.p`
-  max-width: 650px;
-  color: ${props => props.theme.gradient.rightToLeft};
-`;
 
-const Header = ({ children, title, date, cover }) => (
+const Header = ({ cover }) => (
   <Wrapper>
     <Img fluid={cover || {} || [] || ''} />
   </Wrapper>

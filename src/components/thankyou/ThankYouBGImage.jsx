@@ -4,18 +4,19 @@ import styled from 'styled-components';
 import BackgroundImage from 'gatsby-background-image';
 
 const LandingBGImage = ({ children, className }) => (
-  // image query
-  <StaticQuery
-    query={graphql`
-      query {
-        desktop: file(relativePath: { eq: "bgAbout.jpg" }) {
-          childImageSharp {
-            fluid(quality: 90, maxWidth: 1920) {
-              ...GatsbyImageSharpFluid_withWebp
+  // image query 
+    <StaticQuery
+      query={graphql`
+        query {
+          desktop: file(relativePath: { eq: "bgAbout.jpg" }) {
+            childImageSharp {
+              fluid(quality: 90, maxWidth: 1920) {
+                ...GatsbyImageSharpFluid_withWebp
+              }
+
             }
           }
         }
-      }
     `}
     render={data => {
       // Set ImageData.
@@ -43,10 +44,9 @@ const StyledBackgroundSection = styled(LandingBGImage)`
   filter: blur(1.1px);
   position: absolute !important;
   height: 100%;
-  z-index: -100;
-`;
-const H2 = styled.h2`
-  border-bottom: 1px ${props => props.theme.colors.parBlue.light} solid;
-  padding-bottom: 10px;
-`;
-export default StyledBackgroundSection;
+  z-index: -100;    
+`
+
+export default  StyledBackgroundSection
+
+

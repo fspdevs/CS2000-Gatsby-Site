@@ -16,23 +16,25 @@ const LandingBGImage = ({ children, className }) => (
           }
         }
       }
-    `}
-    render={data => {
-      // Set ImageData.
-      const imageData = data.desktop.childImageSharp.fluid;
-      return (
-        <BackgroundImage
-          Tag="section"
-          className={className}
-          fluid={imageData}
-          backgroundColor={`#040e18`}
-        >
-          {children}
-        </BackgroundImage>
-      );
-    }}
-  />
-);
+      `}
+
+      render={data => {
+        // Set ImageData.
+        const imageData = data.desktop.childImageSharp.fluid
+        return (
+          <BackgroundImage
+            Tag="section"
+            className={className}
+            fluid={imageData}
+            alt=""
+            backgroundColor={`#040e18`}
+          >
+        {children}
+          </BackgroundImage>
+        )
+      }}
+    />
+  )
 
 const StyledBackgroundSection = styled(LandingBGImage)`
   width: 100vw;
@@ -41,9 +43,13 @@ const StyledBackgroundSection = styled(LandingBGImage)`
   background-size: cover;
   position: absolute !important;
   left: 0;
+  // height: 10px;
   height: 600px;
   z-index: -100;
   margin-top: 0px;
-`;
 
-export default StyledBackgroundSection;
+`
+
+export default  StyledBackgroundSection
+
+
