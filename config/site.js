@@ -9,10 +9,9 @@ module.exports = {
   logo: 'static/logo/logo.png', // Used for SEO
   banner: 'static/logo/banner.png',
   // JSONLD / Manifest
-  favicon: 'src/images/CS200MiniLogo.png', // Used for manifest favicon generation
+  favicon: 'src/images/cslogo.png', // Used for manifest favicon generation
   shortName: 'CS2000', // shortname for manifest. MUST be shorter than 12 characters
   author: 'Avery-Dante Hinds', // Author for schemaORGJSONLD
   themeColor: '#3e7bf2',
   backgroundColor: '#d3e0ff',
-  //twitter: '@user_name', // Twitter Username
 };
