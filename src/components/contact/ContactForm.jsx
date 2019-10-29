@@ -12,6 +12,7 @@ const FormWrap = styled.div`
   width: 100%;
   min-height: 800px;
 `;
+// form styles
 const StyledForm = styled.form`
   margin: 0 auto;
   display: flex;

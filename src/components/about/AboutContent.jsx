@@ -34,14 +34,17 @@ const AboutRow2Wrap = styled.div`
 const AboutContent = () => {
   return (
     <>
+      {/* back ground image and overlay */}
       <AboutBGImage>
         <div id="my-overlay-about"></div>
       </AboutBGImage>
+      {/* row one and bottom fade animation */}
       <AboutRow1Wrap>
         <Fade bottom>
           <AboutMain />
         </Fade>
       </AboutRow1Wrap>
+      {/* row 2 and fade animations */}
       <AboutRow2Wrap>
         <Fade left>
           <Portfolio />

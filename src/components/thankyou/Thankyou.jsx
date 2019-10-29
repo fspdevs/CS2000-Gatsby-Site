@@ -3,7 +3,6 @@ import styled from '@emotion/styled';
 import ThankYouBGImage from './ThankYouBGImage';
 
 const H2 = styled.h2`
-//border-bottom: 1px ${props => props.theme.colors.parBlue.light} solid;
   padding-bottom: 10px;
 `;
 
@@ -24,7 +23,6 @@ const ThankYou = () => (
         {`
           .thank-you-section {
             height: 875px;
-
             background: rgb(255,255,255);
             background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(157,157,157,1) 100%);
           }
@@ -49,7 +47,6 @@ const ThankYou = () => (
             text-align: center;
             color: black;
             font-family: 'Candal',-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif;
-
           }
 
           @media only screen and (max-width: 600px) {
