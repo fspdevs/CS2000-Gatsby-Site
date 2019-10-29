@@ -6,10 +6,10 @@ module.exports = {
   url: 'https://capitalsource2000.com', // Domain of your site. No trailing slash!
   siteUrl: 'https://capitalsource2000.com', // url + pathPrefix
   siteLanguage: 'en', // Language Tag on <html> element
-  logo: 'static/logo/logo.png', // Used for SEO
+  logo: 'static/logo/cslogo.png', // Used for SEO
   banner: 'static/logo/banner.png',
   // JSONLD / Manifest
-  favicon: 'src/images/cslogo.png', // Used for manifest favicon generation
+  favicon: 'src/images/CS200MiniLogo.png', // Used for manifest favicon generation
   shortName: 'CS2000', // shortname for manifest. MUST be shorter than 12 characters
   author: 'Avery-Dante Hinds', // Author for schemaORGJSONLD
   themeColor: '#3e7bf2',
