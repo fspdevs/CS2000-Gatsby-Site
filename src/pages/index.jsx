@@ -40,7 +40,7 @@ const Index = () => {
 
   return (
     <Layout>
-      <Helmet title={'Home Page'} defer={false} />
+      <Helmet title={'Capital Source 2000'} defer={false} />
       <Header title="CAPITAL SOURCE 2000"></Header>
       {/* background image with overlay  */}
       <LandingBGImage>
