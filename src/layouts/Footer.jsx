@@ -7,8 +7,6 @@ import { OutboundLink } from 'gatsby-plugin-google-analytics';
 
 const Wrapper = styled.footer`
   position: relative;
-
-  // padding-top: 2rem;
   bottom: 0;
   box-shadow: ${props => props.theme.shadow.footer};
   background: ${props => props.theme.gradient.leftToRight};
@@ -20,13 +18,10 @@ const Wrapper = styled.footer`
 `;
 const TopSection = styled.div`
   padding-top: 2rem;
-  // max-width: 500px;
   text-align: left;
   margin: 0 auto;
   padding-bottom: 2rem;
-  // text-align: center;
   color: ${props => props.theme.colors.white.light};
-  // background: #2a363d;
   background: #0c0e2d;
 `;
 
@@ -37,9 +32,7 @@ const TextTop = styled.div`
   margin: 0 auto;
   font-size: 16px;
   padding-bottom: 2rem;
-  // text-align: center;
   color: ${props => props.theme.colors.white.light};
-  // background: #2a363d;
   background: #0c0e2d;
 `;
 
@@ -81,6 +74,8 @@ const Footer = () => (
           <OutboundLink
             href="http://fullspectrumprocessing.com/"
             target="_blank"
+            rel="noopener noreferrer"
+
             style={{ color: '#768daf' }}
           >
             Full Spectrum Processing

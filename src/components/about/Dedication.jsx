@@ -12,6 +12,7 @@ const DedicationWrap = styled.div`
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+
 `;
 
 const Dedication = () => {

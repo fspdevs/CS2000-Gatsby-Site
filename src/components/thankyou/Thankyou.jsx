@@ -25,16 +25,12 @@ const ThankYou = () => (
           .thank-you-section {
             height: 875px;
 
-            background: rgb(255, 255, 255);
-            background: radial-gradient(
-              circle,
-              rgba(255, 255, 255, 1) 0%,
-              rgba(157, 157, 157, 1) 100%
-            );
+            background: rgb(255,255,255);
+            background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(157,157,157,1) 100%);
           }
-          .thank-you-container {
-            margin: 0 auto;
 
+          .thank-you-container {
+            margin: 0 auto;        
             max-width: 1366px;
           }
 
@@ -44,8 +40,7 @@ const ThankYou = () => (
             text-align: center;
             padding-top: 300px;
             color: black;
-            font-family: 'Candal', -apple-system, 'BlinkMacSystemFont',
-              'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+            font-family: 'Candal',-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif;
           }
 
           .thank-you-sub {
@@ -53,8 +48,8 @@ const ThankYou = () => (
             font-size: 50px;
             text-align: center;
             color: black;
-            font-family: 'Candal', -apple-system, 'BlinkMacSystemFont',
-              'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+            font-family: 'Candal',-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif;
+
           }
 
           @media only screen and (max-width: 600px) {

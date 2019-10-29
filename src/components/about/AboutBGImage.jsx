@@ -16,23 +16,27 @@ const AboutBGImage = ({ children, className }) => (
           }
         }
       }
-    `}
-    render={data => {
-      // Set ImageData.
-      const imageData = data.desktop.childImageSharp.fluid;
-      return (
-        <BackgroundImage
-          Tag="section"
-          className={className}
-          fluid={imageData}
-          backgroundColor={`#040e18`}
-        >
-          {children}
-        </BackgroundImage>
-      );
-    }}
-  />
-);
+      `}
+
+      render={data => {
+        // Set ImageData.
+        const imageData = data.desktop.childImageSharp.fluid
+        return (
+          <BackgroundImage
+            Tag="section"
+            className={className}
+            fluid={imageData}
+            alt=""
+            backgroundColor={`#040e18`}
+          >
+        {children}
+           
+          </BackgroundImage>
+        )
+      }}
+    />
+  )
+
 
 const StyledBackgroundSection = styled(AboutBGImage)`
   width: 100vw;

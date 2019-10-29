@@ -9,33 +9,32 @@ const ResultsRow1Wrap = styled.div`
   display: flex;
   flex-direction: row;
   align-content: center;
-
   height: 300px;
-
   @media (max-width: 900px) {
     margin-top: 50px;
   }
 `;
 
+// set initial state false
 const Results = () => {
   const [state, setState] = useState({
     hoverWho: false,
     hoverResults: false,
   });
 
+
+  // on mouse hover state change
   const hoverWho = () => {
-    console.log('in here');
 
     setState({
       ...state,
       hoverWho: true,
     });
 
-    console.log(state);
   };
-
+  // mouse off state return to false
   const unHoverWho = () => {
-    console.log('unhover');
+
     setState({
       ...state,
       hoverWho: false,
@@ -44,6 +43,8 @@ const Results = () => {
 
   return (
     <>
+
+    {/* wrapper that triggers the hover events  */}
       <div className="wrapper">
         <Fade right>
           <ResultsRow1Wrap
@@ -51,10 +52,12 @@ const Results = () => {
             onMouseLeave={unHoverWho}
             className="section-who"
           >
+            {/* icon section */}
             <FontAwesomeIcon
               icon={faTrophy}
               size="2x"
               className="icon icon-change icon-spin"
+              alt="Trophy Icon"
               style={
                 state.hoverWho
                   ? { color: '#e74c3c', border: '2px solid #e74c3c' }
@@ -62,6 +65,7 @@ const Results = () => {
               }
             />
 
+            {/* text section */}
             <div className="who-text">
               <h2
                 className="icon-change"
@@ -106,6 +110,7 @@ const Results = () => {
             flex-direction: column;
             align-content: center;
           }
+
         `}
       </style>
     </>
