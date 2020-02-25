@@ -70,16 +70,7 @@ const Footer = () => (
       </TopSection>
       <TextBottom>
         <span>
-          Capital Source 2000 -{' '}
-          <OutboundLink
-            href="http://fullspectrumprocessing.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-
-            style={{ color: '#768daf' }}
-          >
-            Full Spectrum Processing
-          </OutboundLink>
+          Capital Source 2000 © 2020
         </span>
       </TextBottom>
     </Wrapper>
