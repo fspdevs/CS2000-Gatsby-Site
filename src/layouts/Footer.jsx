@@ -63,7 +63,7 @@ const Footer = () => (
               Contact
             </h3>
 
-            <p className="footer-text">(610) 291-7722</p>
+            {/* <p className="footer-text">(610) 291-7722</p> */}
             <p className="footer-text email">info@capitalsource2000.com</p>
           </Fade>
         </TextTop>

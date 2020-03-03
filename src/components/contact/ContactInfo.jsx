@@ -30,7 +30,7 @@ export const ContactInfo = () => {
           <Fade left>
 
           <H2>Contact Info</H2>
-          
+
           <p>
             {' '}
             We understand that time is valuable and you may need to ask a quick
@@ -40,10 +40,10 @@ export const ContactInfo = () => {
             have.
           </p>
           <table>
-            <tr>
+            {/* <tr>
               <th>Phone</th>
               <td>(215) 291-7722</td>
-            </tr>
+            </tr> */}
             <tr>
               <th>Email</th>
               <td>info@capitalsource2000.com</td>
@@ -55,7 +55,7 @@ export const ContactInfo = () => {
       </InfoWrap>
       <style jsx>
         {`
- 
+
  @media (max-width: 515px) {
   td {
    font-size: 13px;
