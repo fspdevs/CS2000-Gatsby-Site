@@ -133,7 +133,7 @@ const NavBar = () => (
           height: 3px;
           bottom: 0;
           left: 0;
-          border-bottom: 2px solid #4492c9;
+        /* border-bottom: 2px solid #4492c9; */
           color: #4492c9 !important;
         }
 
