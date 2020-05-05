@@ -63,23 +63,14 @@ const Footer = () => (
               Contact
             </h3>
 
-            <p className="footer-text">(610) 291-7722</p>
+            {/* <p className="footer-text">(610) 291-7722</p> */}
             <p className="footer-text email">info@capitalsource2000.com</p>
           </Fade>
         </TextTop>
       </TopSection>
       <TextBottom>
         <span>
-          Capital Source 2000 -{' '}
-          <OutboundLink
-            href="http://fullspectrumprocessing.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-
-            style={{ color: '#768daf' }}
-          >
-            Full Spectrum Processing
-          </OutboundLink>
+          Capital Source 2000 © 2020
         </span>
       </TextBottom>
     </Wrapper>

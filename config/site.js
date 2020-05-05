@@ -6,7 +6,7 @@ module.exports = {
   url: 'https://capitalsource2000.com', // Domain of your site. No trailing slash!
   siteUrl: 'https://capitalsource2000.com', // url + pathPrefix
   siteLanguage: 'en', // Language Tag on <html> element
-  logo: 'static/logo/logo.png', // Used for SEO
+  logo: 'static/logo/cslogo.png', // Used for SEO
   banner: 'static/logo/banner.png',
   // JSONLD / Manifest
   favicon: 'src/images/CS200MiniLogo.png', // Used for manifest favicon generation
@@ -14,5 +14,4 @@ module.exports = {
   author: 'Avery-Dante Hinds', // Author for schemaORGJSONLD
   themeColor: '#3e7bf2',
   backgroundColor: '#d3e0ff',
-  //twitter: '@user_name', // Twitter Username
 };
