@@ -7,10 +7,18 @@ width: 90%;
 margin: 0 auto;
 padding-top: 75px;
 max-width: 1366px;
+
 `
 const LI = styled.li`
 
 `;
+
+const H1 = styled.h1`
+border-bottom: 2px solid #4492c9;
+padding-bottom: 10px;
+`
+
+
 
 const Terms = () => {
   return (
@@ -18,7 +26,7 @@ const Terms = () => {
       <Wrapper>
         
         <div >
-          <h2 >Terms of Use</h2>
+          <H1 >Terms of Use</H1>
         </div>
         <div >
           <p >

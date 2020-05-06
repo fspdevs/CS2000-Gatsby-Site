@@ -19,6 +19,7 @@ const Nav = styled.nav`
   font-family: ${props => props.theme.fontFamily.body};
   font-weight: 500;
   font-size: 1.1rem;
+  /*font-size: 18px;*/
   align-items: center;
   a {
     color: #383838 !important;
@@ -57,6 +58,16 @@ const NavBar = () => (
         </Link>
       </div>
       <div>
+      <Link to="/terms" className="menu-item nav">
+         Terms 
+        </Link>
+        </div>
+        <div>
+        <Link to="/privacy" className="menu-item nav">
+          Policy
+        </Link>
+        </div>
+      <div>
         <Link className="nav" to="/contact" activeClassName="nav-active">
           Contact Us
         </Link>
@@ -73,6 +84,12 @@ const NavBar = () => (
         </Link>
         <Link to="/whyus" className="menu-item nav">
           Why Us
+        </Link>
+        <Link to="/terms" className="menu-item nav">
+         Terms & Conditions
+        </Link>
+        <Link to="/privacy" className="menu-item nav">
+         Our Policy
         </Link>
         <Link to="/contact" className="menu-item nav">
           Contact Us
@@ -238,7 +255,7 @@ const NavBar = () => (
            background: #757778;
         }
 
-        @media only screen and (max-width: 780px) {
+        @media only screen and (max-width: 950px) {
           .nav {
             display: none;
           }
