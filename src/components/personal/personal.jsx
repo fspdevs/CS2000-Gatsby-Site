@@ -159,7 +159,7 @@ const Personal = () => {
           <tr>
             <TDDark>To limit our sharing</TDDark>
             <TD>
-              Call toll-free [HOTLINE] or send an email to
+              Call toll-free [(610) 291-7722] or send an email to
               info@capitalsource2000.com
               <br></br>
               <strong>Please note:</strong>
@@ -175,7 +175,7 @@ const Personal = () => {
           <tr>
             <TDDark>Questions?</TDDark>
             <TD>
-              Call toll-free [HOTLINE] or go to www.capitalsource2000.com
+              Call toll-free [(610) 291-7722] or go to www.capitalsource2000.com
             </TD>
           </tr>
         </Table>
@@ -390,7 +390,7 @@ const Personal = () => {
                 restriction of processing or to object to processing of their
                 personal data; and (iii) the right to data portability. If you
                 wish to exercise one of the above mentioned rights, please call
-                us at [HOTLINE]. Individuals in Europe may also have the
+                us at (610) 291-7722. Individuals in Europe may also have the
                 right to lodge a complaint about the processing of their
                 personal data with their local data protection authority.
               </p>
@@ -414,7 +414,7 @@ const Personal = () => {
               </p>
               <p>
                 Additional information concerning our privacy policies can be
-                found at www.capitalsource2000.com or call [HOTLINE]
+                found at www.capitalsource2000.com or call [(610) 291-7722]
               </p>
             </TD>
           </tr>
