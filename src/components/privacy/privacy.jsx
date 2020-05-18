@@ -278,7 +278,7 @@ const Policy = () => {
                 have submitted a funding request with a Capital Source 2000
                 Business, you can update your personal information by contacting
                 our Customer Care Department at info@capitalsource2000.com. Our
-                address is [22 N 3rd St, Philadelphia, PA 19106].
+                address is 205 Arch Street Unit 2, Philadelphia, PA 19106.
               </Li>
             </ul>
             </div>
@@ -419,16 +419,16 @@ const Policy = () => {
                 <br />
                 Capital Source 2000, Inc.
                 <br />
-                [22 N 3rd St.
+                205 Arch Street Unit 2
                 <br />
-                Philadelphia, PA 19106]
+                Philadelphia, PA 19106
                 <br />
                 <br />
                 OR
                 <br />
                 <br />
                 <A href="mailto:info@capitalsource2000.com">
-                 [info@capitalsource2000.com]
+                 info@capitalsource2000.com
                 </A>
                 <br />
                 <br />

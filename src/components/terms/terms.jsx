@@ -9,7 +9,7 @@ padding-top: 75px;
 max-width: 1366px;
 
 `
-const LI = styled.li`
+const li = styled.li`
 
 `;
 
@@ -101,7 +101,7 @@ const Terms = () => {
           </p>
         </div>
         <div >
-          <h2 >Limitation Of Liability</h2>
+          <h2 >limitation Of liability</h2>
 
           <p >
             Capital Source 2000 and its affiliates, directors, officers, and
@@ -114,26 +114,25 @@ const Terms = () => {
             out of or relates in any way to:
           </p>
           <ol>
-            <LI>
+            <li>
               use of the Site, materials within the Site, or the inability to
               use the Site;
-            </LI>
-            <LI>
+            </li>
+            <li>
               any Third Party Site, materials in any Third Party Site, or the
               inability to use any Third Party Site;
-            </LI>
-            <LI>
+            </li>
+            <li>
               any defect, omission, error, interruption, delay, or computer
               virus; or the unauthorized alteration of or access to users’
               transmissions or personal data, except as a result of
               capitalsource2000.com gross negligence or intentional action(s).
-            </LI>
+            </li>
           </ol>
           <br></br>
           <p >
             The information and materials contained in this site, including
-            text, graphics, links, or other items are provided “as is.” (Company
-            Name) does not warrant the accuracy, adequacy, or completeness of
+            text, graphics, links, or other items are provided “as is.” Capital Source 2000 does not warrant the accuracy, adequacy, or completeness of
             this information and materials and expressly disclaims liability for
             errors or omissions in the information and materials. No warranty of
             any kind, implied, expressed, or statutory, including but not
@@ -240,7 +239,7 @@ const Terms = () => {
             </strong>
           </p>
           <ol>
-            <LI>
+            <li>
               <strong>They are different types of transactions.</strong> Annual
               Percentage Rates (APR) are percentages that determine the annual
               rate of interest a business owner is charged for borrowed capital.
@@ -249,8 +248,8 @@ const Terms = () => {
               represented as a fixed decimal number which determines the total
               amount of capital that business owners are obligated to pay upon
               the sale of a fixed period of their future receivables.{' '}
-            </LI>
-            <LI>
+            </li>
+            <li>
               <strong>
                 Factor rates are typically associated with merchant cash
                 advances (MCAs).
@@ -262,8 +261,8 @@ const Terms = () => {
               the MCA, you can arrive at the factor rate. So, if you receive an
               MCA of $100,000 with a 1.25 factor rate, you’ll have sold $125,000
               in future receivables by the end of the payment period.
-            </LI>
-            <LI>
+            </li>
+            <li>
               <strong>How it differs from Loans and APR.</strong> Loans operate
               differently from cash advances in that you’ll pay different
               amounts as you pay back the loan (principal vs. interest). APR
@@ -273,7 +272,7 @@ const Terms = () => {
               money. So if your given rate is five percent, your APR might be
               5.5 – 5.8%, depending on other cost factors by the time you sign
               your contract.
-            </LI>
+            </li>
           </ol>
         </div>
         <div>
@@ -282,7 +281,7 @@ const Terms = () => {
             If you are not a current customer of Capital Source 2000, and would not
             like to receive phone and/or emails from us regarding business
             funding opportunities for your company, please contact us at
-            [HOTLINE NUMBER] or info@capitalsource2000.com to be placed on our do not
+            215-613-4126 or info@capitalsource2000.com to be placed on our do not
             contact list.
           </p>
           <br></br>

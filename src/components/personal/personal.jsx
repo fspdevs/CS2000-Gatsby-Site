@@ -159,7 +159,7 @@ const Personal = () => {
           <tr>
             <TDDark>To limit our sharing</TDDark>
             <TD>
-              Call toll-free [(610) 291-7722] or send an email to
+              Call (215) 613-4126 or send an email to
               info@capitalsource2000.com
               <br></br>
               <strong>Please note:</strong>
@@ -175,7 +175,7 @@ const Personal = () => {
           <tr>
             <TDDark>Questions?</TDDark>
             <TD>
-              Call toll-free [(610) 291-7722] or go to www.capitalsource2000.com
+              Call (215) 613-4126 or go to www.capitalsource2000.com
             </TD>
           </tr>
         </Table>
@@ -414,7 +414,7 @@ const Personal = () => {
               </p>
               <p>
                 Additional information concerning our privacy policies can be
-                found at www.capitalsource2000.com or call [(610) 291-7722]
+                found at www.capitalsource2000.com or call (215) 613-4126
               </p>
             </TD>
           </tr>
