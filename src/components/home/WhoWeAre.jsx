@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import styled from '@emotion/styled';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBriefcase, faTrophy } from '@fortawesome/free-solid-svg-icons';
+import { faBriefcase } from '@fortawesome/free-solid-svg-icons';
 import Fade from 'react-reveal/Fade';
 
 const WhoRow1Wrap = styled.div`
@@ -21,10 +21,10 @@ const WhoRow1Wrap = styled.div`
   }
 `;
 
+// set inital state to false;
 const WhoWeAre = () => {
   const [state, setState] = useState({
     hoverWho: false,
-    hoverResults: false,
   });
 
 
@@ -48,17 +48,14 @@ const WhoWeAre = () => {
   return (
     <>
       <div className="wrapper">
-
         {/* animation fade */}
         <Fade left>
           {/* area wrapper that calls mouse hover events */}
-
           <WhoRow1Wrap
             onMouseEnter={hoverWho}
             onMouseLeave={unHoverWho}
             className="section-who"
           >
-
             {/* icon section */}
             <FontAwesomeIcon
               icon={faBriefcase}

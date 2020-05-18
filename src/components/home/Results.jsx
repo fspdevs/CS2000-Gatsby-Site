@@ -19,7 +19,6 @@ const ResultsRow1Wrap = styled.div`
 const Results = () => {
   const [state, setState] = useState({
     hoverWho: false,
-    hoverResults: false,
   });
 
 

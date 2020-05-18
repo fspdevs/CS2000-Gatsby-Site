@@ -43,7 +43,6 @@ const StyledBackgroundSection = styled(LandingBGImage)`
   background-size: cover;
   position: absolute !important;
   left: 0;
-  // height: 10px;
   height: 600px;
   z-index: -100;
   margin-top: 0px;
