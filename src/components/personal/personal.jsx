@@ -390,7 +390,7 @@ const Personal = () => {
                 restriction of processing or to object to processing of their
                 personal data; and (iii) the right to data portability. If you
                 wish to exercise one of the above mentioned rights, please call
-                us at (610) 291-7722. Individuals in Europe may also have the
+                us at (215) 613-4126. Individuals in Europe may also have the
                 right to lodge a complaint about the processing of their
                 personal data with their local data protection authority.
               </p>
